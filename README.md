@@ -1,7 +1,7 @@
 # HCI
 Human Computer Interaction @ NHN NEXT 2015
 
-#### You need to install below
+#### This project used below
 * Visual studio 2013  
 * openFrameworks
 * Visual Micro  
