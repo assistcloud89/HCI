@@ -1,0 +1,171 @@
+﻿  ofxTuioClient.cpp
+C:\Users\HooN\Desktop\Touch_and_Draw\trunk\libs\poco\include\Poco/StreamConverter.h(126): warning C4250: 'Poco::InputStreamConverter' : 우위에 따라 'std::basic_istream<_Elem,_Traits>::std::basic_istream<_Elem,_Traits>::_Add_vtordisp1'을(를) 상속합니다.
+          with
+          [
+              _Elem=char,
+              _Traits=std::char_traits<char>
+          ]
+          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\istream(74) : 'std::basic_istream<_Elem,_Traits>::_Add_vtordisp1' 선언을 참조하십시오.
+          with
+          [
+              _Elem=char,
+              _Traits=std::char_traits<char>
+          ]
+C:\Users\HooN\Desktop\Touch_and_Draw\trunk\libs\poco\include\Poco/StreamConverter.h(144): warning C4250: 'Poco::OutputStreamConverter' : 우위에 따라 'std::basic_ostream<_Elem,_Traits>::std::basic_ostream<_Elem,_Traits>::_Add_vtordisp2'을(를) 상속합니다.
+          with
+          [
+              _Elem=char,
+              _Traits=std::char_traits<char>
+          ]
+          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\ostream(90) : 'std::basic_ostream<_Elem,_Traits>::_Add_vtordisp2' 선언을 참조하십시오.
+          with
+          [
+              _Elem=char,
+              _Traits=std::char_traits<char>
+          ]
+  IpEndpointName.cpp
+..\..\..\addons\TUIO11_CPP\oscpack\ip\IpEndpointName.cpp(53): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(357) : 'sprintf' 선언을 참조하십시오.
+..\..\..\addons\TUIO11_CPP\oscpack\ip\IpEndpointName.cpp(59): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(357) : 'sprintf' 선언을 참조하십시오.
+..\..\..\addons\TUIO11_CPP\oscpack\ip\IpEndpointName.cpp(68): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(357) : 'sprintf' 선언을 참조하십시오.
+..\..\..\addons\TUIO11_CPP\oscpack\ip\IpEndpointName.cpp(74): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(357) : 'sprintf' 선언을 참조하십시오.
+..\..\..\addons\TUIO11_CPP\oscpack\ip\IpEndpointName.cpp(78): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(357) : 'sprintf' 선언을 참조하십시오.
+..\..\..\addons\TUIO11_CPP\oscpack\ip\IpEndpointName.cpp(85): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(357) : 'sprintf' 선언을 참조하십시오.
+  NetworkingUtils.cpp
+  UdpSocket.cpp
+  OscOutboundPacketStream.cpp
+..\..\..\addons\TUIO11_CPP\oscpack\osc\OscOutboundPacketStream.cpp(363): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(110) : 'strcpy' 선언을 참조하십시오.
+..\..\..\addons\TUIO11_CPP\oscpack\osc\OscOutboundPacketStream.cpp(605): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(110) : 'strcpy' 선언을 참조하십시오.
+..\..\..\addons\TUIO11_CPP\oscpack\osc\OscOutboundPacketStream.cpp(625): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(110) : 'strcpy' 선언을 참조하십시오.
+  OscPrintReceivedElements.cpp
+..\..\..\addons\TUIO11_CPP\oscpack\osc\OscPrintReceivedElements.cpp(129): warning C4996: 'ctime': This function or variable may be unsafe. Consider using ctime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\time.inl(86) : 'ctime' 선언을 참조하십시오.
+  OscReceivedElements.cpp
+  OscTypes.cpp
+  FlashSender.cpp
+..\..\..\addons\TUIO11_CPP\TUIO\FlashSender.cpp(162): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(191) : 'strncpy' 선언을 참조하십시오.
+..\..\..\addons\TUIO11_CPP\TUIO\FlashSender.cpp(163): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(191) : 'strncpy' 선언을 참조하십시오.
+..\..\..\addons\TUIO11_CPP\TUIO\FlashSender.cpp(199): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(191) : 'strncpy' 선언을 참조하십시오.
+..\..\..\addons\TUIO11_CPP\TUIO\FlashSender.cpp(205): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(191) : 'strncpy' 선언을 참조하십시오.
+..\..\..\addons\TUIO11_CPP\TUIO\FlashSender.cpp(249): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(191) : 'strncpy' 선언을 참조하십시오.
+..\..\..\addons\TUIO11_CPP\TUIO\FlashSender.cpp(394): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(110) : 'strcpy' 선언을 참조하십시오.
+  OscReceiver.cpp
+  OscSender.cpp
+  TcpReceiver.cpp
+  TcpSender.cpp
+  TuioBlob.cpp
+  TuioClient.cpp
+..\..\..\addons\TUIO11_CPP\TUIO\TuioClient.cpp(83): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(200) : 'strtok' 선언을 참조하십시오.
+..\..\..\addons\TUIO11_CPP\TUIO\TuioClient.cpp(84): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(200) : 'strtok' 선언을 참조하십시오.
+..\..\..\addons\TUIO11_CPP\TUIO\TuioClient.cpp(246): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(200) : 'strtok' 선언을 참조하십시오.
+..\..\..\addons\TUIO11_CPP\TUIO\TuioClient.cpp(247): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(200) : 'strtok' 선언을 참조하십시오.
+..\..\..\addons\TUIO11_CPP\TUIO\TuioClient.cpp(475): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(200) : 'strtok' 선언을 참조하십시오.
+..\..\..\addons\TUIO11_CPP\TUIO\TuioClient.cpp(476): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(200) : 'strtok' 선언을 참조하십시오.
+  TuioContainer.cpp
+  TuioCursor.cpp
+  TuioDispatcher.cpp
+  TuioManager.cpp
+  TuioObject.cpp
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  TuioPoint.cpp
+  TuioServer.cpp
+..\..\..\addons\TUIO11_CPP\TUIO\TuioServer.cpp(142): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(357) : 'sprintf' 선언을 참조하십시오.
+..\..\..\addons\TUIO11_CPP\TUIO\TuioServer.cpp(151): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(357) : 'sprintf' 선언을 참조하십시오.
+..\..\..\addons\TUIO11_CPP\TUIO\TuioServer.cpp(162): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(357) : 'sprintf' 선언을 참조하십시오.
+..\..\..\addons\TUIO11_CPP\TUIO\TuioServer.cpp(179): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(357) : 'sprintf' 선언을 참조하십시오.
+  TuioTime.cpp
+  UdpReceiver.cpp
+..\..\..\addons\TUIO11_CPP\TUIO\UdpReceiver.cpp(37): warning C4101: 'e' :참조되지 않은 지역 변수입니다.
+  UdpSender.cpp
+..\..\..\addons\TUIO11_CPP\TUIO\UdpSender.cpp(30): warning C4101: 'e' :참조되지 않은 지역 변수입니다.
+..\..\..\addons\TUIO11_CPP\TUIO\UdpSender.cpp(48): warning C4101: 'e' :참조되지 않은 지역 변수입니다.
+..\..\..\addons\TUIO11_CPP\TUIO\UdpSender.cpp(64): warning C4101: 'e' :참조되지 않은 지역 변수입니다.
+  main.cpp
+C:\Users\HooN\Desktop\Touch_and_Draw\trunk\libs\poco\include\Poco/StreamConverter.h(126): warning C4250: 'Poco::InputStreamConverter' : 우위에 따라 'std::basic_istream<_Elem,_Traits>::std::basic_istream<_Elem,_Traits>::_Add_vtordisp1'을(를) 상속합니다.
+          with
+          [
+              _Elem=char,
+              _Traits=std::char_traits<char>
+          ]
+          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\istream(74) : 'std::basic_istream<_Elem,_Traits>::_Add_vtordisp1' 선언을 참조하십시오.
+          with
+          [
+              _Elem=char,
+              _Traits=std::char_traits<char>
+          ]
+C:\Users\HooN\Desktop\Touch_and_Draw\trunk\libs\poco\include\Poco/StreamConverter.h(144): warning C4250: 'Poco::OutputStreamConverter' : 우위에 따라 'std::basic_ostream<_Elem,_Traits>::std::basic_ostream<_Elem,_Traits>::_Add_vtordisp2'을(를) 상속합니다.
+          with
+          [
+              _Elem=char,
+              _Traits=std::char_traits<char>
+          ]
+          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\ostream(90) : 'std::basic_ostream<_Elem,_Traits>::_Add_vtordisp2' 선언을 참조하십시오.
+          with
+          [
+              _Elem=char,
+              _Traits=std::char_traits<char>
+          ]
+  testApp.cpp
+C:\Users\HooN\Desktop\Touch_and_Draw\trunk\libs\poco\include\Poco/StreamConverter.h(126): warning C4250: 'Poco::InputStreamConverter' : 우위에 따라 'std::basic_istream<_Elem,_Traits>::std::basic_istream<_Elem,_Traits>::_Add_vtordisp1'을(를) 상속합니다.
+          with
+          [
+              _Elem=char,
+              _Traits=std::char_traits<char>
+          ]
+          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\istream(74) : 'std::basic_istream<_Elem,_Traits>::_Add_vtordisp1' 선언을 참조하십시오.
+          with
+          [
+              _Elem=char,
+              _Traits=std::char_traits<char>
+          ]
+C:\Users\HooN\Desktop\Touch_and_Draw\trunk\libs\poco\include\Poco/StreamConverter.h(144): warning C4250: 'Poco::OutputStreamConverter' : 우위에 따라 'std::basic_ostream<_Elem,_Traits>::std::basic_ostream<_Elem,_Traits>::_Add_vtordisp2'을(를) 상속합니다.
+          with
+          [
+              _Elem=char,
+              _Traits=std::char_traits<char>
+          ]
+          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\ostream(90) : 'std::basic_ostream<_Elem,_Traits>::_Add_vtordisp2' 선언을 참조하십시오.
+          with
+          [
+              _Elem=char,
+              _Traits=std::char_traits<char>
+          ]
+  코드를 생성하고 있습니다...
+     bin\oF_with_TUIO.lib 라이브러리 및 bin\oF_with_TUIO.exp 개체를 생성하고 있습니다.
+  LINK : /LTCG를 지정했지만 코드를 생성할 필요가 없습니다. 명령줄에서 /LTCG를 제거하면 링커 성능이 향상됩니다.
+  emptyExample.vcxproj -> C:\Users\HooN\Desktop\Touch_and_Draw\trunk\apps\myApps\oF_with_TUIO\bin\oF_with_TUIO.exe
+  C:\Users\HooN\Desktop\Touch_and_Draw\trunk\apps\myApps\oF_with_TUIO\..\..\..\export\vs\Assimp32.dll
+  C:\Users\HooN\Desktop\Touch_and_Draw\trunk\apps\myApps\oF_with_TUIO\..\..\..\export\vs\fmodex.dll
+  C:\Users\HooN\Desktop\Touch_and_Draw\trunk\apps\myApps\oF_with_TUIO\..\..\..\export\vs\fmodexL.dll
+  C:\Users\HooN\Desktop\Touch_and_Draw\trunk\apps\myApps\oF_with_TUIO\..\..\..\export\vs\FreeImage.dll
+  C:\Users\HooN\Desktop\Touch_and_Draw\trunk\apps\myApps\oF_with_TUIO\..\..\..\export\vs\FreeType-6.dll
+  C:\Users\HooN\Desktop\Touch_and_Draw\trunk\apps\myApps\oF_with_TUIO\..\..\..\export\vs\glut32.dll
+  C:\Users\HooN\Desktop\Touch_and_Draw\trunk\apps\myApps\oF_with_TUIO\..\..\..\export\vs\libeay32.dll
+  C:\Users\HooN\Desktop\Touch_and_Draw\trunk\apps\myApps\oF_with_TUIO\..\..\..\export\vs\ssleay32.dll
+  C:\Users\HooN\Desktop\Touch_and_Draw\trunk\apps\myApps\oF_with_TUIO\..\..\..\export\vs\Zlib.dll
+  9개 파일이 복사되었습니다.

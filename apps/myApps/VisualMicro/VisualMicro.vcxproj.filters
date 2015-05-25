@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="Visual Micro\.VisualMicro.vsarduino.h">
+      <Filter>Header file</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source file">
+      <UniqueIdentifier>{4a78791a-f067-4a19-b377-2764f99af40f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header file">
+      <UniqueIdentifier>{47ea08e7-8a28-4580-92cd-3e24c3a1c230}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="VisualMicro.ino" />
+  </ItemGroup>
+</Project>

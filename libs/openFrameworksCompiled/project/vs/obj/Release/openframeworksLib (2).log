@@ -1,0 +1,1190 @@
+﻿  ofArduino.cpp
+  ofSerial.cpp
+  ofVboMesh.cpp
+  of3dGraphics.cpp
+  ofBitmapFont.cpp
+  ofCairoRenderer.cpp
+  ofGraphics.cpp
+  ofImage.cpp
+C:\Users\HooN\Desktop\HCI\openFrameworks\libs\freeImage\include\FreeImage.h : warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+  ofPath.cpp
+  ofPixels.cpp
+  ofPolyline.cpp
+  ofRendererCollection.cpp
+  ofTessellator.cpp
+  ofTrueTypeFont.cpp
+  ofMath.cpp
+  ofMatrix3x3.cpp
+  ofMatrix4x4.cpp
+  ofQuaternion.cpp
+  ofVec2f.cpp
+  ofVec4f.cpp
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  ofFmodSoundPlayer.cpp
+  ofRtAudioSoundStream.cpp
+  ofSoundPlayer.cpp
+  ofSoundStream.cpp
+  ofBaseTypes.cpp
+  ofColor.cpp
+  ofParameter.cpp
+  ofParameterGroup.cpp
+  ofRectangle.cpp
+  ofFileUtils.cpp
+C:\Users\HooN\Desktop\HCI\openFrameworks\libs\poco\include\Poco/FileStream.h(130): warning C4250: 'Poco::FileInputStream' : 우위에 따라 'std::basic_istream<_Elem,_Traits>::std::basic_istream<_Elem,_Traits>::_Add_vtordisp1'을(를) 상속합니다.
+          with
+          [
+              _Elem=char,
+              _Traits=std::char_traits<char>
+          ]
+          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\istream(74) : 'std::basic_istream<_Elem,_Traits>::_Add_vtordisp1' 선언을 참조하십시오.
+          with
+          [
+              _Elem=char,
+              _Traits=std::char_traits<char>
+          ]
+C:\Users\HooN\Desktop\HCI\openFrameworks\libs\poco\include\Poco/FileStream.h(162): warning C4250: 'Poco::FileOutputStream' : 우위에 따라 'std::basic_ostream<_Elem,_Traits>::std::basic_ostream<_Elem,_Traits>::_Add_vtordisp2'을(를) 상속합니다.
+          with
+          [
+              _Elem=char,
+              _Traits=std::char_traits<char>
+          ]
+          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\ostream(90) : 'std::basic_ostream<_Elem,_Traits>::_Add_vtordisp2' 선언을 참조하십시오.
+          with
+          [
+              _Elem=char,
+              _Traits=std::char_traits<char>
+          ]
+C:\Users\HooN\Desktop\HCI\openFrameworks\libs\poco\include\Poco/FileStream.h(192): warning C4250: 'Poco::FileStream' : 우위에 따라 'std::basic_istream<_Elem,_Traits>::std::basic_istream<_Elem,_Traits>::_Add_vtordisp1'을(를) 상속합니다.
+          with
+          [
+              _Elem=char,
+              _Traits=std::char_traits<char>
+          ]
+          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\istream(74) : 'std::basic_istream<_Elem,_Traits>::_Add_vtordisp1' 선언을 참조하십시오.
+          with
+          [
+              _Elem=char,
+              _Traits=std::char_traits<char>
+          ]
+C:\Users\HooN\Desktop\HCI\openFrameworks\libs\poco\include\Poco/FileStream.h(192): warning C4250: 'Poco::FileStream' : 우위에 따라 'std::basic_ostream<_Elem,_Traits>::std::basic_ostream<_Elem,_Traits>::_Add_vtordisp2'을(를) 상속합니다.
+          with
+          [
+              _Elem=char,
+              _Traits=std::char_traits<char>
+          ]
+          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\ostream(90) : 'std::basic_ostream<_Elem,_Traits>::_Add_vtordisp2' 선언을 참조하십시오.
+          with
+          [
+              _Elem=char,
+              _Traits=std::char_traits<char>
+          ]
+  ofLog.cpp
+  ofMatrixStack.cpp
+  ofSystemUtils.cpp
+  ofThread.cpp
+  ofURLFileLoader.cpp
+  ofUtils.cpp
+  ofXml.cpp
+C:\Users\HooN\Desktop\HCI\openFrameworks\libs\poco\include\Poco/StreamConverter.h(126): warning C4250: 'Poco::InputStreamConverter' : 우위에 따라 'std::basic_istream<_Elem,_Traits>::std::basic_istream<_Elem,_Traits>::_Add_vtordisp1'을(를) 상속합니다.
+          with
+          [
+              _Elem=char,
+              _Traits=std::char_traits<char>
+          ]
+          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\istream(74) : 'std::basic_istream<_Elem,_Traits>::_Add_vtordisp1' 선언을 참조하십시오.
+          with
+          [
+              _Elem=char,
+              _Traits=std::char_traits<char>
+          ]
+C:\Users\HooN\Desktop\HCI\openFrameworks\libs\poco\include\Poco/StreamConverter.h(144): warning C4250: 'Poco::OutputStreamConverter' : 우위에 따라 'std::basic_ostream<_Elem,_Traits>::std::basic_ostream<_Elem,_Traits>::_Add_vtordisp2'을(를) 상속합니다.
+          with
+          [
+              _Elem=char,
+              _Traits=std::char_traits<char>
+          ]
+          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\ostream(90) : 'std::basic_ostream<_Elem,_Traits>::_Add_vtordisp2' 선언을 참조하십시오.
+          with
+          [
+              _Elem=char,
+              _Traits=std::char_traits<char>
+          ]
+  ofDirectShowGrabber.cpp
+  ofQtUtils.cpp
+  ofQuickTimeGrabber.cpp
+  코드를 생성하고 있습니다...
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(173): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(173): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(549): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(432): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(432): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(301): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(301): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(301): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(513): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(513): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(513): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(513): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(513): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(513): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(292): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(292): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(292): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(292): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(292): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(292): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(292): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(292): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(187): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(187): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(187): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(187): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.h(616): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.h(616): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.h(607): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(164): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(164): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(168): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(168): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(156): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(156): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(160): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(160): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(160): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(160): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(156): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(156): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(338): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(338): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(338): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(232): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(232): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(232): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(232): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(330): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(330): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(330): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(330): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(330): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(330): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(330): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(330): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(695): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(695): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(695): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(695): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(695): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(695): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(686): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(686): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(686): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(686): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(686): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(686): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(686): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(686): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(686): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(652): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(652): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(652): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(652): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(652): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(652): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(652): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(652): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(652): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(661): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(661): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(661): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(661): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(661): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(661): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(462): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(462): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(454): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(454): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(442): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(442): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(379): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(379): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(365): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(365): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(586): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(586): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(586): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(586): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(586): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(586): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(595): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(595): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(595): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(595): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(595): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(595): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(628): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(628): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(628): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(628): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(628): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(628): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(619): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(619): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(619): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(619): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(619): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(619): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(310): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(310): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(310): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(310): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(310): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(310): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(310): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(670): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(670): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(670): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(670): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(670): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(670): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(670): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(670): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(670): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(678): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(678): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(678): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(678): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(678): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(678): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(644): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(644): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(644): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(644): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(644): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(644): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(636): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(636): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(636): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(636): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(636): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(636): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(636): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(636): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(636): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(442): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(442): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(442): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(578): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(578): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(578): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(578): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(578): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(578): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(365): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(365): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(365): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(570): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(570): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(570): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(570): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(570): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(570): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(611): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(611): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(611): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(611): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(611): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(611): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(603): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(603): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(603): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(603): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(603): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(603): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(240): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(240): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(240): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(240): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(346): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(346): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(346): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(346): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(346): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(346): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(346): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(627): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+c:\users\hoon\desktop\hci\openframeworks\libs\openframeworks\types\ofcolor.cpp(197): warning C4756: 상수 산술 연산에서 오버플로가 발생했습니다.
+  컴파일하고 있습니다...
+  ofQuickTimePlayer.cpp
+  ofVideoGrabber.cpp
+  ofVideoPlayer.cpp
+  코드를 생성하고 있습니다...
+  openframeworksLib.vcxproj -> C:\Users\HooN\Desktop\HCI\openFrameworks\libs\openFrameworksCompiled\project\vs\..\..\lib\vs\openframeworksLib.lib
