@@ -86,7 +86,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
-      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
@@ -116,8 +116,9 @@
     <ClCompile Include="..\..\..\addons\TUIO11_CPP\TUIO\TuioTime.cpp" />
     <ClCompile Include="..\..\..\addons\TUIO11_CPP\TUIO\UdpReceiver.cpp" />
     <ClCompile Include="..\..\..\addons\TUIO11_CPP\TUIO\UdpSender.cpp" />
+    <ClCompile Include="src\DrawManager.cpp" />
     <ClCompile Include="src\main.cpp" />
-    <ClCompile Include="src\testApp.cpp" />
+    <ClCompile Include="src\TouchManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\addons\ofxTuioWrapper\src\ofxTuioClient.h" />
@@ -153,7 +154,8 @@
     <ClInclude Include="..\..\..\addons\TUIO11_CPP\TUIO\TuioTime.h" />
     <ClInclude Include="..\..\..\addons\TUIO11_CPP\TUIO\UdpReceiver.h" />
     <ClInclude Include="..\..\..\addons\TUIO11_CPP\TUIO\UdpSender.h" />
-    <ClInclude Include="src\testApp.h" />
+    <ClInclude Include="src\DrawManager.h" />
+    <ClInclude Include="src\TouchManager.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\libs\openFrameworksCompiled\project\vs\openframeworksLib.vcxproj">

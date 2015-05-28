@@ -76,11 +76,14 @@
     <ClCompile Include="src\main.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="src\testApp.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\addons\ofxTuioWrapper\src\ofxTuioClient.cpp">
       <Filter>ofxTuioClient</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TouchManager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DrawManager.cpp">
+      <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -200,11 +203,14 @@
     <ClInclude Include="..\..\..\addons\TUIO11_CPP\oscpack\osc\OscTypes.h">
       <Filter>TUIO\oscpack\osc</Filter>
     </ClInclude>
-    <ClInclude Include="src\testApp.h">
-      <Filter>src</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\addons\ofxTuioWrapper\src\ofxTuioClient.h">
       <Filter>ofxTuioClient</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TouchManager.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DrawManager.h">
+      <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
