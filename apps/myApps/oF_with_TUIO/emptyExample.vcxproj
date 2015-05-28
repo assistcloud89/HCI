@@ -116,8 +116,12 @@
     <ClCompile Include="..\..\..\addons\TUIO11_CPP\TUIO\TuioTime.cpp" />
     <ClCompile Include="..\..\..\addons\TUIO11_CPP\TUIO\UdpReceiver.cpp" />
     <ClCompile Include="..\..\..\addons\TUIO11_CPP\TUIO\UdpSender.cpp" />
+    <ClCompile Include="src\ColorChipManager.cpp" />
     <ClCompile Include="src\DrawManager.cpp" />
+    <ClCompile Include="src\EditManager.cpp" />
+    <ClCompile Include="src\LEDManager.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\TouchHistory.cpp" />
     <ClCompile Include="src\TouchManager.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -154,7 +158,11 @@
     <ClInclude Include="..\..\..\addons\TUIO11_CPP\TUIO\TuioTime.h" />
     <ClInclude Include="..\..\..\addons\TUIO11_CPP\TUIO\UdpReceiver.h" />
     <ClInclude Include="..\..\..\addons\TUIO11_CPP\TUIO\UdpSender.h" />
+    <ClInclude Include="src\ColorChipManager.h" />
     <ClInclude Include="src\DrawManager.h" />
+    <ClInclude Include="src\EditManager.h" />
+    <ClInclude Include="src\LEDManager.h" />
+    <ClInclude Include="src\TouchHistory.h" />
     <ClInclude Include="src\TouchManager.h" />
   </ItemGroup>
   <ItemGroup>

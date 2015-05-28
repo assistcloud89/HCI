@@ -85,6 +85,18 @@
     <ClCompile Include="src\DrawManager.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\ColorChipManager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\EditManager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LEDManager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TouchHistory.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="src">
@@ -210,6 +222,18 @@
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="src\DrawManager.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ColorChipManager.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\EditManager.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LEDManager.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TouchHistory.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>
