@@ -7,7 +7,7 @@
 int main(){
 
     ofAppGlutWindow window;
-	ofSetupOpenGL(&window, 1024,768, OF_WINDOW);			// <-------- setup the GL context
+	ofSetupOpenGL(&window, 512,384, OF_WINDOW);			// <-------- setup the GL context
 
 	//DrawManager::GetInstance()->Init();
 

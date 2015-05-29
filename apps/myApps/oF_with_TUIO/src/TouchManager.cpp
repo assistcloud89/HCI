@@ -25,11 +25,7 @@ void TouchManager::update()
 //--------------------------------------------------------------
 void TouchManager::draw()
 {
-
-	//render TUIO Cursors and Objects
-	//myTuio.drawCursors();
-	//myTuio.drawObjects();
-
+	myTuio.drawCursors();
 
 	std::list<TuioCursor*> cursorList = myTuio.client->getTuioCursors();
 	std::list<TuioCursor*>::iterator tit;

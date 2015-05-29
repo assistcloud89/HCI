@@ -24,6 +24,8 @@ EthernetServer server(8001);	// Server port number that you set
 
 RGBmatrixPanel matrix(A, B, C, D, CLK, LAT, OE, false);
 
+//uint16_t a[13][9];
+
 void setup()
 {
 	byte mac[] = {0x90, 0xA2, 0xDA, 0x0E, 0xAE, 0xDD};	// Mac address of ethernet shield
