@@ -159,6 +159,7 @@
     <ClInclude Include="..\..\..\addons\TUIO11_CPP\TUIO\UdpReceiver.h" />
     <ClInclude Include="..\..\..\addons\TUIO11_CPP\TUIO\UdpSender.h" />
     <ClInclude Include="src\ColorChipManager.h" />
+    <ClInclude Include="src\Coordinate.h" />
     <ClInclude Include="src\DrawManager.h" />
     <ClInclude Include="src\EditManager.h" />
     <ClInclude Include="src\LEDManager.h" />

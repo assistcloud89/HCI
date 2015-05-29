@@ -27,7 +27,7 @@ void DrawManager::Init()
 	if(hSocket == INVALID_SOCKET)
 		ErrorHandling("socket() error!\n");
 	else
-		printf("socket() succeed\n");
+		std::cout << "socket() succeed" << std::endl;
 
 	memset(&servAddr, 0, sizeof(servAddr));
 	servAddr.sin_family = AF_INET;
@@ -37,7 +37,7 @@ void DrawManager::Init()
 	if(connect(hSocket, ( SOCKADDR* )&servAddr, sizeof(servAddr)) == SOCKET_ERROR)
 		ErrorHandling("connect() error!\n");
 	else
-		printf("connect() succeed\n");
+		std::cout << "connect() succeed" << std::endl;
 }
 
 void DrawManager::Close()
@@ -52,7 +52,7 @@ void DrawManager::SendData()
 	if(send(hSocket, send_buf, sizeof(send_buf), 0) == SOCKET_ERROR)
 		ErrorHandling("send() error!\n");
 	else
-		printf("sending : %s\n", send_buf);
+		std::cout << "sending : " << send_buf << std::endl;
 }
 
 void DrawManager::ErrorHandling(char* message)

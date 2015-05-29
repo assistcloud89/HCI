@@ -3,6 +3,7 @@
 
 #include "ofMain.h"
 #include "ofxTuioClient.h"
+#include "Coordinate.h"
 
 class TouchManager : public ofBaseApp
 {

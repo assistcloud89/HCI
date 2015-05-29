@@ -236,6 +236,9 @@
     <ClInclude Include="src\TouchHistory.h">
       <Filter>src</Filter>
     </ClInclude>
+    <ClInclude Include="src\Coordinate.h">
+      <Filter>src</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="icon.rc" />

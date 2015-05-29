@@ -2,7 +2,7 @@
 #define _DRAW_MANAGER_
 
 #include <winsock2.h>
-#include <stdio.h>
+#include <iostream>
 #pragma comment(lib, "ws2_32.lib")
 
 #define SERVER_PORT 8001

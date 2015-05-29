@@ -98,29 +98,29 @@ void TouchManager::windowResized(int w, int h)
 
 void TouchManager::touchDown(ofTouchEventArgs & touch)
 {
-	cout << " cursor added: " + ofToString(touch.id) +
+	std::cout << " cursor added: " + ofToString(touch.id) +
 		" X: " + ofToString(touch.x) +
 		" Y: " + ofToString(touch.y)
-		<< endl;
+		<< std::endl;
 
 
-	cout << "Cursor ID : " << myTuio.client->getTuioCursor(touch.id)->getCursorID() << endl;
+	std::cout << "Cursor ID : " << myTuio.client->getTuioCursor(touch.id)->getCursorID() << std::endl;
 }
 
 void TouchManager::touchUp(ofTouchEventArgs & touch)
 {
-	cout << " cursor removed: " + ofToString(touch.id) +
+	std::cout << " cursor removed: " + ofToString(touch.id) +
 		" X: " + ofToString(touch.x) +
 		" Y: " + ofToString(touch.y)
-		<< endl;
+		<< std::endl;
 }
 
 void TouchManager::touchMoved(ofTouchEventArgs & touch)
 {
-	cout << " cursor updated: " + ofToString(touch.id) +
+	std::cout << " cursor updated: " + ofToString(touch.id) +
 		" X: " + ofToString(touch.x) +
 		" Y: " + ofToString(touch.y)
-		<< endl;
+		<< std::endl;
 
 }
 
