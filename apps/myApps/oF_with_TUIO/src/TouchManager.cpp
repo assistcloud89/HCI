@@ -71,34 +71,37 @@ void TouchManager::windowResized(int w, int h)
 }
 
 
-void TouchManager::touchDown(ofTouchEventArgs & touch)
+void TouchManager::touchDown(ofTouchEventArgs& touch)
 {
-	std::cout << " cursor added: " + ofToString(touch.id) +
+	std::cout << " cursor added: " + 
+		ofToString(touch.id) +
 		" X: " + ofToString(touch.x) +
 		" Y: " + ofToString(touch.y)
 		<< std::endl;
 
-	TouchedSectionHandle(DOWN, touch);
+	TouchedSectionHandle(TOUCH_DOWN, touch);
 }
 
-void TouchManager::touchMoved(ofTouchEventArgs & touch)
+void TouchManager::touchMoved(ofTouchEventArgs& touch)
 {
-	std::cout << " cursor updated: " + ofToString(touch.id) +
+	std::cout << " cursor updated: " +
+		ofToString(touch.id) +
 		" X: " + ofToString(touch.x) +
 		" Y: " + ofToString(touch.y)
 		<< std::endl;
 
-	TouchedSectionHandle(MOVED, touch);
+	TouchedSectionHandle(TOUCH_MOVED, touch);
 }
 
-void TouchManager::touchUp(ofTouchEventArgs & touch)
+void TouchManager::touchUp(ofTouchEventArgs& touch)
 {
-	std::cout << " cursor removed: " + ofToString(touch.id) +
+	std::cout << " cursor removed: " +
+		ofToString(touch.id) +
 		" X: " + ofToString(touch.x) +
 		" Y: " + ofToString(touch.y)
 		<< std::endl;
 
-	TouchedSectionHandle(UP, touch);
+	TouchedSectionHandle(TOUCH_UP, touch);
 }
 
 void TouchManager::TouchedSectionHandle(TouchEvent event,
@@ -114,9 +117,9 @@ void TouchManager::TouchedSectionHandle(TouchEvent event,
 	}
 
 
-	if(IsInEditButtonSection(touch.x, touch.y))
+	if(IsInEditorSection(touch.x, touch.y))
 	{
-		EditButtonManager::GetInstance()->TouchHandle(event,
+		EditorManager::GetInstance()->TouchHandle(event,
 													  touch.id,
 													  touch.x,
 													  touch.y);
@@ -142,7 +145,7 @@ bool TouchManager::IsInLEDSection(float x, float y)
 		return false;
 }
 
-bool TouchManager::IsInEditButtonSection(float x, float y)
+bool TouchManager::IsInEditorSection(float x, float y)
 {
 	if((DRAW_START_X <= x && x <= CLEAR_END_X) &&
 	   (DRAW_START_Y <= y && y <= DRAW_END_Y))

@@ -6,7 +6,7 @@
 #include "Define.h"
 #include "Coordinate.h"
 #include "LEDManager.h"
-#include "EditButtonManager.h"
+#include "EditorManager.h"
 #include "ColorChipManager.h"
 
 class TouchManager : public ofBaseApp
@@ -31,7 +31,7 @@ public:
 	void TouchedSectionHandle(TouchEvent event,
 							  ofTouchEventArgs& touch);
 	bool IsInLEDSection(float x, float y);
-	bool IsInEditButtonSection(float x, float y);
+	bool IsInEditorSection(float x, float y);
 	bool IsInColorChipSection(float x, float y);
 
 private:

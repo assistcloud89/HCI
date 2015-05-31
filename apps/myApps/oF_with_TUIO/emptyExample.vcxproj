@@ -118,7 +118,7 @@
     <ClCompile Include="..\..\..\addons\TUIO11_CPP\TUIO\UdpSender.cpp" />
     <ClCompile Include="src\ColorChipManager.cpp" />
     <ClCompile Include="src\DrawManager.cpp" />
-    <ClCompile Include="src\EditButtonManager.cpp" />
+    <ClCompile Include="src\EditorManager.cpp" />
     <ClCompile Include="src\LEDManager.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\TouchHistory.cpp" />
@@ -162,7 +162,7 @@
     <ClInclude Include="src\Coordinate.h" />
     <ClInclude Include="src\Define.h" />
     <ClInclude Include="src\DrawManager.h" />
-    <ClInclude Include="src\EditButtonManager.h" />
+    <ClInclude Include="src\EditorManager.h" />
     <ClInclude Include="src\LEDManager.h" />
     <ClInclude Include="src\TouchHistory.h" />
     <ClInclude Include="src\TouchManager.h" />

@@ -2,7 +2,14 @@
 #define _LED_MANAGER_
 
 #include "Define.h"
-#include <iostream>
+#include "Coordinate.h"
+
+struct PixelInfo
+{
+	int id;
+	ColorInfo color;
+	bool visible;
+};
 
 class LEDManager
 {
@@ -17,6 +24,28 @@ public:
 					 int id,
 					 float x,
 					 float y);
+	void DrawMode(TouchEvent event,
+				  int id,
+				  float x,
+				  float y);
+	void MoveMode(TouchEvent event,
+				  int id,
+				  float x,
+				  float y);
+	void DeleteMode(TouchEvent event,
+					int id,
+					float x,
+					float y);
+
+	Pixel FindTouchLocation(float x, float y);
+	int FindTouchLocationX(float x);
+	int FindTouchLocationY(float y);
+
+private:
+	std::vector<PixelInfo*>* mPixelTable[29][32]; // mPixelTable[y][x]
+
+	EditorMode mEdit;
+	ColorInfo mColor;
 };
 
 #endif
