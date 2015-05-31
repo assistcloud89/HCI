@@ -4,6 +4,7 @@
 #include <winsock2.h>
 #include <iostream>
 #pragma comment(lib, "ws2_32.lib")
+#include "Define.h"
 
 #define SERVER_PORT 8001
 #define SERVER_ADDR "192.168.0.4"

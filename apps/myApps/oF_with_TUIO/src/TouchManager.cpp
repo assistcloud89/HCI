@@ -8,7 +8,7 @@ void TouchManager::setup()
 	ofSetVerticalSync(true);
 
 	//Connect to Port
-	myTuio.connect(3333);
+	mMyTuio.connect(3333);
 
 	//Assign Global TUIO Callback Functions
 	ofAddListener(ofEvents().touchDown, this, &TouchManager::touchDown);
@@ -25,28 +25,7 @@ void TouchManager::update()
 //--------------------------------------------------------------
 void TouchManager::draw()
 {
-	myTuio.drawCursors();
-
-	std::list<TuioCursor*> cursorList = myTuio.client->getTuioCursors();
-	std::list<TuioCursor*>::iterator tit;
-	myTuio.client->lockCursorList();
-	for(tit = cursorList.begin(); tit != cursorList.end(); tit++)
-	{
-		TuioCursor * cur = (*tit);
-		//if(tcur!=0){
-		//TuioCursor cur = *tcur;
-		glColor3f(1.0, 0.0, 0.0);
-		ofEllipse(cur->getX()*ofGetWidth(), cur->getY()*ofGetHeight(), 20.0, 20.0);
-		glColor3f(0.0, 0.0, 0.0);
-		string str = "SessionId: " + ofToString(( int )(cur->getSessionID()));
-		ofDrawBitmapString(str, cur->getX()*ofGetWidth() - 10.0, cur->getY()*ofGetHeight() + 25.0);
-		str = "CursorId: " + ofToString(( int )(cur->getCursorID()));
-		ofDrawBitmapString(str, cur->getX()*ofGetWidth() - 10.0, cur->getY()*ofGetHeight() + 40.0);
-		//}
-	}
-	myTuio.client->unlockCursorList();
-
-
+	mMyTuio.drawCursors();
 }
 
 //--------------------------------------------------------------
@@ -99,16 +78,7 @@ void TouchManager::touchDown(ofTouchEventArgs & touch)
 		" Y: " + ofToString(touch.y)
 		<< std::endl;
 
-
-	std::cout << "Cursor ID : " << myTuio.client->getTuioCursor(touch.id)->getCursorID() << std::endl;
-}
-
-void TouchManager::touchUp(ofTouchEventArgs & touch)
-{
-	std::cout << " cursor removed: " + ofToString(touch.id) +
-		" X: " + ofToString(touch.x) +
-		" Y: " + ofToString(touch.y)
-		<< std::endl;
+	TouchedSectionHandle(DOWN, touch);
 }
 
 void TouchManager::touchMoved(ofTouchEventArgs & touch)
@@ -118,5 +88,75 @@ void TouchManager::touchMoved(ofTouchEventArgs & touch)
 		" Y: " + ofToString(touch.y)
 		<< std::endl;
 
+	TouchedSectionHandle(MOVED, touch);
+}
+
+void TouchManager::touchUp(ofTouchEventArgs & touch)
+{
+	std::cout << " cursor removed: " + ofToString(touch.id) +
+		" X: " + ofToString(touch.x) +
+		" Y: " + ofToString(touch.y)
+		<< std::endl;
+
+	TouchedSectionHandle(UP, touch);
+}
+
+void TouchManager::TouchedSectionHandle(TouchEvent event,
+										ofTouchEventArgs& touch)
+{
+	if(IsInLEDSection(touch.x, touch.y))
+	{
+		LEDManager::GetInstance()->TouchHandle(event,
+											   touch.id,
+											   touch.x,
+											   touch.y);
+		return;
+	}
+
+
+	if(IsInEditButtonSection(touch.x, touch.y))
+	{
+		EditButtonManager::GetInstance()->TouchHandle(event,
+													  touch.id,
+													  touch.x,
+													  touch.y);
+		return;
+	}
+
+	if(IsInColorChipSection(touch.x, touch.y))
+	{
+		ColorChipManager::GetInstance()->TouchHandle(event,
+													 touch.id,
+													 touch.x,
+													 touch.y);
+		return;
+	}
+}
+
+bool TouchManager::IsInLEDSection(float x, float y)
+{
+	if((PIXEL_X_0 <= x && x <= PIXEL_X_END) &&
+	   (PIXEL_Y_0 <= y && y <= PIXEL_Y_END))
+		return true;
+	else
+		return false;
+}
+
+bool TouchManager::IsInEditButtonSection(float x, float y)
+{
+	if((DRAW_START_X <= x && x <= CLEAR_END_X) &&
+	   (DRAW_START_Y <= y && y <= DRAW_END_Y))
+		return true;
+	else
+		return false;
+}
+
+bool TouchManager::IsInColorChipSection(float x, float y)
+{
+	if((CHIP_X_0_START <= x && x <= CHIP_X_8_END) &&
+	   (CHIP_Y_0_START <= y && y <= CHIP_Y_12_END))
+		return true;
+	else
+		return false;
 }
 

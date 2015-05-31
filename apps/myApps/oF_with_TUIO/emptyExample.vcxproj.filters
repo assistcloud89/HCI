@@ -88,13 +88,13 @@
     <ClCompile Include="src\ColorChipManager.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="src\EditManager.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
     <ClCompile Include="src\LEDManager.cpp">
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="src\TouchHistory.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\EditButtonManager.cpp">
       <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>
@@ -227,9 +227,6 @@
     <ClInclude Include="src\ColorChipManager.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="src\EditManager.h">
-      <Filter>src</Filter>
-    </ClInclude>
     <ClInclude Include="src\LEDManager.h">
       <Filter>src</Filter>
     </ClInclude>
@@ -237,6 +234,12 @@
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="src\Coordinate.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Define.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\EditButtonManager.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>
