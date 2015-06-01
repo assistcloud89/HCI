@@ -9,7 +9,8 @@ int main(){
     ofAppGlutWindow window;
 	ofSetupOpenGL(&window, 512,384, OF_WINDOW);			// <-------- setup the GL context
 
-	//DrawManager::GetInstance()->Init();
+	DrawManager::GetInstance()->Init();
+	DrawManager::GetInstance()->SendData();
 
 	// this kicks off the running of my app
 	// can be OF_WINDOW or OF_FULLSCREEN

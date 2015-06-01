@@ -4,6 +4,9 @@
 #include <iostream>
 #include <vector>
 
+#define COLOR_DATA	9
+#define EDIT_DATA	8
+
 struct Pixel
 {
 	int x;

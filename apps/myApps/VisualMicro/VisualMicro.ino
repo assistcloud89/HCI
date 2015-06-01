@@ -9,8 +9,6 @@
 
 #include <Adafruit_GFX.h>   // Core graphics library
 #include <RGBmatrixPanel.h> // Hardware-specific library
-#include <SPI.h>
-#include <Ethernet.h>
 
 #define CLK 8
 #define OE  9
@@ -20,173 +18,503 @@
 #define C   A2
 #define D   A3
 
-EthernetServer server(8001);	// Server port number that you set
+#define COORD_DATA_0	0 
+#define COORD_DATA_1	1
+#define COORD_DATA_2	2 
+#define COORD_DATA_3	3 
+#define COLOR_DATA		9
+#define EDIT_DATA		8
+
+#define DRAW	0
+#define MOVE	1
+#define DELETE	2
 
 RGBmatrixPanel matrix(A, B, C, D, CLK, LAT, OE, false);
 
-uint16_t color[13][9] = {0, };
+uint16_t getColor(int col, int row);
+uint16_t currentColor;
 
-void initColor();
+int currentEdit;
+uint16_t editColor;
+uint16_t eraseColor;
+
+int x = -1;
+int y = -1;
 
 void setup()
 {
-	byte mac[] = {0x90, 0xA2, 0xDA, 0x0E, 0xAE, 0xDD};	// Mac address of ethernet shield
-	IPAddress ip(192, 168, 0, 4);						// DHCP IP address
+	// Open serial communications
+	Serial.begin(56000);
+	
+	// Initialize the LED
+	matrix.begin();
 
-	Ethernet.begin(mac, ip);	// Initialize the ethernet device
-	server.begin();				// Start listening for client
+	// Initialize the color
+	currentColor = matrix.Color888(255, 0, 0);
+	editColor = matrix.Color888(153, 70, 0);
+	eraseColor = matrix.Color888(0, 0, 0);
 
-	Serial.begin(9600);		// Open serial communications
+	// Initialize the edit mode
+	currentEdit = DRAW;
 
-	matrix.begin();	// Initialize the LED
+	// Draw color zone
+	matrix.drawPixel(0, 30, currentColor);
+	matrix.drawPixel(1, 30, currentColor);
+	matrix.drawPixel(0, 31, currentColor);
+	matrix.drawPixel(1, 31, currentColor);
 
-	initColor();	// Initialize the color chip
+	// Draw edit zone
+	matrix.drawPixel(3, 30, editColor);
+	matrix.drawPixel(3, 31, editColor);
+	matrix.drawPixel(4, 30, editColor);
+	matrix.drawPixel(4, 31, editColor);
+	matrix.drawPixel(5, 30, editColor);
+	matrix.drawPixel(5, 31, editColor);
+	matrix.drawPixel(6, 30, editColor);
+	matrix.drawPixel(6, 31, editColor);
+
+	// Just for stablization
+	delay(1000);
 }
 
 void loop()
 {
-	EthernetClient client = server.available();	// Wait for a new client
-
-	if(client)
+	if(Serial.available() > 0)
 	{
-		while(client.available() > 0)
+		int indicator = Serial.peek() - '0';
+		if(indicator == COLOR_DATA)
 		{
-			char thisChar = client.read();
-			Serial.print(thisChar);
+			//Serial.println("COLOR");
+
+			// Received data is color info
+			while(Serial.available() >= 4)
+			{
+				int col = 0;
+				int row = 0;
+
+				// Detach the indicator
+				Serial.read();
+
+				for(int i = 0; i < 2; ++i)
+				{
+					int temp = Serial.read() - '0';
+					col = col * 10 + temp;
+				}
+				row = Serial.read() - '0';
+
+				//Serial.print("col: ");
+				//Serial.print(col);
+				//Serial.print(", row: ");
+				//Serial.println(row);
+
+				if((0 <= col && col < 13) && (0 <= row && row < 9))
+				{
+					currentColor = getColor(col, row);
+
+					matrix.drawPixel(0, 30, currentColor);
+					matrix.drawPixel(1, 30, currentColor);
+					matrix.drawPixel(0, 31, currentColor);
+					matrix.drawPixel(1, 31, currentColor);
+				}
+
+				break;
+			}
 		}
-		Serial.println();
+		else if(indicator == EDIT_DATA)
+		{
+			//Serial.println("EDIT");
+
+			// Received data is edit info
+			while(Serial.available() >= 2)
+			{
+				int drawPoint;
+				int erasePoint;
+
+				// Detach the indicator
+				Serial.read();
+
+				switch(currentEdit)
+				{
+				case DRAW:
+					erasePoint = 3; break;
+				case MOVE:
+					erasePoint = 8; break;
+				case DELETE:
+					erasePoint = 13; break;
+				}
+
+				int nextEdit = Serial.read() - '0';
+				switch(nextEdit)
+				{
+				case DRAW:
+					drawPoint = 3; break;
+				case MOVE:
+					drawPoint = 8; break;
+				case DELETE:
+					drawPoint = 13; break;
+				}
+
+				matrix.drawPixel(erasePoint, 30, eraseColor);
+				matrix.drawPixel(erasePoint, 31, eraseColor);
+				matrix.drawPixel(erasePoint + 1, 30, eraseColor);
+				matrix.drawPixel(erasePoint + 1, 31, eraseColor);
+				matrix.drawPixel(erasePoint + 2, 30, eraseColor);
+				matrix.drawPixel(erasePoint + 2, 31, eraseColor);
+				matrix.drawPixel(erasePoint + 3, 30, eraseColor);
+				matrix.drawPixel(erasePoint + 3, 31, eraseColor);				
+
+				matrix.drawPixel(drawPoint, 30, editColor);
+				matrix.drawPixel(drawPoint, 31, editColor);
+				matrix.drawPixel(drawPoint + 1, 30, editColor);
+				matrix.drawPixel(drawPoint + 1, 31, editColor);
+				matrix.drawPixel(drawPoint + 2, 30, editColor);
+				matrix.drawPixel(drawPoint + 2, 31, editColor);
+				matrix.drawPixel(drawPoint + 3, 30, editColor);
+				matrix.drawPixel(drawPoint + 3, 31, editColor);
+
+				currentEdit = nextEdit;
+
+				break;
+			}
+		}
+		else
+		{
+			//Serial.println("COORD");
+
+			// Received data is coordinate info
+			while(Serial.available() >= 4)
+			{
+				x = 0;
+				y = 0;
+
+				for(int i = 0; i < 2; ++i)
+				{
+					int temp = Serial.read() - '0';
+					x = x * 10 + temp;
+
+				}
+				for(int i = 0; i < 2; ++i)
+				{
+					int temp = Serial.read() - '0';
+					y = y * 10 + temp;
+				}
+
+				//Serial.print("(");
+				//Serial.print(x);
+				//Serial.print(", ");
+				//Serial.print(y);
+				//Serial.println(")");
+
+				if((0 <= x && x < 32) && (0 <= y && y < 29))
+					matrix.drawPixel(x, y, currentColor);
+
+				break;
+			}
+		}
 	}
 }
-
-void initColor()
+uint16_t getColor(int col, int row)
 {
-	color[0][0] = matrix.Color888(51, 0, 0);
-	color[0][1] = matrix.Color888(102, 0, 0);
-	color[0][2] = matrix.Color888(153, 0, 0);
-	color[0][3] = matrix.Color888(204, 0, 0);
-	color[0][4] = matrix.Color888(255, 0, 0);
-	color[0][5] = matrix.Color888(255, 51, 51);
-	color[0][6] = matrix.Color888(255, 102, 102);
-	color[0][7] = matrix.Color888(255, 153, 153);
-	color[0][8] = matrix.Color888(255, 204, 204);
-
-	color[1][0] = matrix.Color888(51, 25, 0);
-	color[1][1] = matrix.Color888(102, 51, 0);
-	color[1][2] = matrix.Color888(153, 76, 0);
-	color[1][3] = matrix.Color888(204, 102, 0);
-	color[1][4] = matrix.Color888(255, 128, 0);
-	color[1][5] = matrix.Color888(255, 153, 51);
-	color[1][6] = matrix.Color888(255, 178, 102);
-	color[1][7] = matrix.Color888(255, 204, 153);
-	color[1][8] = matrix.Color888(255, 229, 204);
-	
-	color[2][0] = matrix.Color888(51, 51, 0);
-	color[2][1] = matrix.Color888(102, 102, 0);
-	color[2][2] = matrix.Color888(153, 153, 0);
-	color[2][3] = matrix.Color888(204, 204, 0);
-	color[2][4] = matrix.Color888(255, 255, 0);
-	color[2][5] = matrix.Color888(255, 255, 51);
-	color[2][6] = matrix.Color888(255, 255, 102);
-	color[2][7] = matrix.Color888(255, 255, 153);
-	color[2][8] = matrix.Color888(255, 255, 204);
-	
-	color[3][0] = matrix.Color888(25, 51, 0);
-	color[3][1] = matrix.Color888(51, 102, 0);
-	color[3][2] = matrix.Color888(76, 153, 0);
-	color[3][3] = matrix.Color888(102, 204, 0);
-	color[3][4] = matrix.Color888(128, 255, 0);
-	color[3][5] = matrix.Color888(153, 255, 51);
-	color[3][6] = matrix.Color888(178, 255, 102);
-	color[3][7] = matrix.Color888(204, 255, 153);
-	color[3][8] = matrix.Color888(229, 255, 204);
-	
-	color[4][0] = matrix.Color888(0, 51, 0);
-	color[4][1] = matrix.Color888(0, 102, 0);
-	color[4][2] = matrix.Color888(0, 153, 0);
-	color[4][3] = matrix.Color888(0, 204, 0);
-	color[4][4] = matrix.Color888(0, 255, 0);
-	color[4][5] = matrix.Color888(51, 255, 51);
-	color[4][6] = matrix.Color888(102, 255, 102);
-	color[4][7] = matrix.Color888(153, 255, 153);
-	color[4][8] = matrix.Color888(204, 255, 204);
-	
-	color[5][0] = matrix.Color888(0, 51, 25);
-	color[5][1] = matrix.Color888(0, 102, 51);
-	color[5][2] = matrix.Color888(0, 153, 76);
-	color[5][3] = matrix.Color888(0, 204, 102);
-	color[5][4] = matrix.Color888(0, 255, 128);
-	color[5][5] = matrix.Color888(51, 255, 153);
-	color[5][6] = matrix.Color888(102, 255, 178);
-	color[5][7] = matrix.Color888(153, 255, 204);
-	color[5][8] = matrix.Color888(204, 255, 209);
-	
-	color[6][0] = matrix.Color888(0, 51, 51);
-	color[6][1] = matrix.Color888(0, 102, 102);
-	color[6][2] = matrix.Color888(0, 153, 153);
-	color[6][3] = matrix.Color888(0, 204, 204);
-	color[6][4] = matrix.Color888(0, 255, 255);
-	color[6][5] = matrix.Color888(51, 255, 255);
-	color[6][6] = matrix.Color888(102, 255, 255);
-	color[6][7] = matrix.Color888(153, 255, 255);
-	color[6][8] = matrix.Color888(204, 255, 255);
-	
-	color[7][0] = matrix.Color888(0, 25, 51);
-	color[7][1] = matrix.Color888(0, 51, 102);
-	color[7][2] = matrix.Color888(0, 76, 153);
-	color[7][3] = matrix.Color888(0, 102, 204);
-	color[7][4] = matrix.Color888(0, 128, 255);
-	color[7][5] = matrix.Color888(51, 153, 255);
-	color[7][6] = matrix.Color888(102, 178, 255);
-	color[7][7] = matrix.Color888(153, 204, 255);
-	color[7][8] = matrix.Color888(204, 229, 255);
-	
-	color[8][0] = matrix.Color888(0, 0, 51);
-	color[8][1] = matrix.Color888(0, 0, 102);
-	color[8][2] = matrix.Color888(0, 0, 153);
-	color[8][3] = matrix.Color888(0, 0, 204);
-	color[8][4] = matrix.Color888(0, 0, 255);
-	color[8][5] = matrix.Color888(51, 51, 255);
-	color[8][6] = matrix.Color888(102, 102, 255);
-	color[8][7] = matrix.Color888(153, 153, 255);
-	color[8][8] = matrix.Color888(204, 204, 255);
-
-	color[9][0] = matrix.Color888(25, 0, 51);
-	color[9][1] = matrix.Color888(51, 0, 102);
-	color[9][2] = matrix.Color888(76, 0, 153);
-	color[9][3] = matrix.Color888(102, 0, 204);
-	color[9][4] = matrix.Color888(127, 0, 255);
-	color[9][5] = matrix.Color888(153, 51, 255);
-	color[9][6] = matrix.Color888(178, 102, 255);
-	color[9][7] = matrix.Color888(204, 153, 255);
-	color[9][8] = matrix.Color888(229, 204, 255);
-
-	color[10][0] = matrix.Color888(51, 0, 51);
-	color[10][1] = matrix.Color888(102, 0, 102);
-	color[10][2] = matrix.Color888(153, 0, 153);
-	color[10][3] = matrix.Color888(204, 0, 204);
-	color[10][4] = matrix.Color888(255, 0, 255);
-	color[10][5] = matrix.Color888(255, 51, 255);
-	color[10][6] = matrix.Color888(255, 102, 255);
-	color[10][7] = matrix.Color888(255, 153, 255);
-	color[10][8] = matrix.Color888(255, 204, 255);
-
-	color[11][0] = matrix.Color888(51, 0, 25);
-	color[11][1] = matrix.Color888(102, 0, 51);
-	color[11][2] = matrix.Color888(153, 0, 76);
-	color[11][3] = matrix.Color888(204, 0, 102);
-	color[11][4] = matrix.Color888(255, 0, 127);
-	color[11][5] = matrix.Color888(255, 51, 153);
-	color[11][6] = matrix.Color888(255, 102, 178);
-	color[11][7] = matrix.Color888(255, 153, 204);
-	color[11][8] = matrix.Color888(255, 204, 229);
-
-	color[12][0] = matrix.Color888(0, 0, 0);
-	color[12][1] = matrix.Color888(32, 32, 32);
-	color[12][2] = matrix.Color888(64, 64, 64);
-	color[12][3] = matrix.Color888(96, 96, 96);
-	color[12][4] = matrix.Color888(128, 128, 128);
-	color[12][5] = matrix.Color888(160, 160, 160);
-	color[12][6] = matrix.Color888(192, 192, 192);
-	color[12][7] = matrix.Color888(224, 224, 224);
-	color[12][8] = matrix.Color888(255, 255, 255);
+	switch(col)
+	{
+	case 0:
+		switch(row)
+		{
+		case 0:
+			return matrix.Color888(51, 0, 0); break;
+		case 1:
+			return matrix.Color888(102, 0, 0); break;
+		case 2:
+			return matrix.Color888(153, 0, 0); break;
+		case 3:
+			return matrix.Color888(204, 0, 0); break;
+		case 4:
+			return matrix.Color888(255, 0, 0); break;
+		case 5:
+			return matrix.Color888(255, 51, 51); break;
+		case 6:
+			return matrix.Color888(255, 102, 102); break;
+		case 7:
+			return matrix.Color888(255, 153, 153); break;
+		case 8:
+			return matrix.Color888(255, 204, 204); break;
+		}
+		break;
+	case 1:
+		switch(row)
+		{
+		case 0:
+			return matrix.Color888(51, 25, 0); break;
+		case 1:
+			return matrix.Color888(102, 51, 0); break;
+		case 2:
+			return matrix.Color888(153, 76, 0); break;
+		case 3:
+			return matrix.Color888(204, 102, 0); break;
+		case 4:
+			return matrix.Color888(255, 128, 0); break;
+		case 5:
+			return matrix.Color888(255, 153, 51); break;
+		case 6:
+			return matrix.Color888(255, 178, 102); break;
+		case 7:
+			return matrix.Color888(255, 204, 153); break;
+		case 8:
+			return matrix.Color888(255, 229, 204); break;
+		}
+		break;
+	case 2:
+		switch(row)
+		{
+		case 0:
+			return matrix.Color888(51, 51, 0); break;
+		case 1:
+			return matrix.Color888(102, 102, 0); break;
+		case 2:
+			return matrix.Color888(153, 153, 0); break;
+		case 3:
+			return matrix.Color888(204, 204, 0); break;
+		case 4:
+			return matrix.Color888(255, 255, 0); break;
+		case 5:
+			return matrix.Color888(255, 255, 51); break;
+		case 6:
+			return matrix.Color888(255, 255, 102); break;
+		case 7:
+			return matrix.Color888(255, 255, 153); break;
+		case 8:
+			return matrix.Color888(255, 255, 204); break;
+		}
+		break;
+	case 3:
+		switch(row)
+		{
+		case 0:
+			return matrix.Color888(25, 51, 0); break;
+		case 1:
+			return matrix.Color888(51, 102, 0); break;
+		case 2:
+			return matrix.Color888(76, 153, 0); break;
+		case 3:
+			return matrix.Color888(102, 204, 0); break;
+		case 4:
+			return matrix.Color888(128, 255, 0); break;
+		case 5:
+			return matrix.Color888(153, 255, 51); break;
+		case 6:
+			return matrix.Color888(178, 255, 102); break;
+		case 7:
+			return matrix.Color888(204, 255, 153); break;
+		case 8:
+			return matrix.Color888(229, 255, 204); break;
+		}
+		break;
+	case 4:
+		switch(row)
+		{
+		case 0:
+			return matrix.Color888(0, 51, 0); break;
+		case 1:
+			return matrix.Color888(0, 102, 0); break;
+		case 2:
+			return matrix.Color888(0, 153, 0); break;
+		case 3:
+			return matrix.Color888(0, 204, 0); break;
+		case 4:
+			return matrix.Color888(0, 255, 0); break;
+		case 5:
+			return matrix.Color888(51, 255, 51); break;
+		case 6:
+			return matrix.Color888(102, 255, 102); break;
+		case 7:
+			return matrix.Color888(153, 255, 153); 	break;
+		case 8:
+			return matrix.Color888(204, 255, 204); break;
+		}
+		break;
+	case 5:
+		switch(row)
+		{
+		case 0:
+			return matrix.Color888(0, 51, 25); break;
+		case 1:
+			return matrix.Color888(0, 102, 51); break;
+		case 2:
+			return matrix.Color888(0, 153, 76); break;
+		case 3:
+			return matrix.Color888(0, 204, 102); break;
+		case 4:
+			return matrix.Color888(0, 255, 128); break;
+		case 5:
+			return matrix.Color888(51, 255, 153); break;
+		case 6:
+			return matrix.Color888(102, 255, 178); break;
+		case 7:
+			return matrix.Color888(153, 255, 204); break;
+		case 8:
+			return matrix.Color888(204, 255, 209); break;
+		}
+		break;
+	case 6:
+		switch(row)
+		{
+		case 0:
+			return matrix.Color888(0, 51, 51); break;
+		case 1:
+			return matrix.Color888(0, 102, 102); break;
+		case 2:
+			return matrix.Color888(0, 153, 153); break;
+		case 3:
+			return matrix.Color888(0, 204, 204); break;
+		case 4:
+			return matrix.Color888(0, 255, 255); break;
+		case 5:
+			return matrix.Color888(51, 255, 255); break;
+		case 6:
+			return matrix.Color888(102, 255, 255); break;
+		case 7:
+			return matrix.Color888(153, 255, 255); break;
+		case 8:
+			return matrix.Color888(204, 255, 255); break;
+		}
+		break;
+	case 7:
+		switch(row)
+		{
+		case 0:
+			return matrix.Color888(0, 25, 51); break;
+		case 1:
+			return matrix.Color888(0, 51, 102); break;
+		case 2:
+			return matrix.Color888(0, 76, 153); break;
+		case 3:
+			return matrix.Color888(0, 102, 204); break;
+		case 4:
+			return matrix.Color888(0, 128, 255); break;
+		case 5:
+			return matrix.Color888(51, 153, 255); break;
+		case 6:
+			return matrix.Color888(102, 178, 255); break;
+		case 7:
+			return matrix.Color888(153, 204, 255); break;
+		case 8:
+			return matrix.Color888(204, 229, 255); break;
+		}
+		break;
+	case 8:
+		switch(row)
+		{
+		case 0:
+			return matrix.Color888(0, 0, 51); break;
+		case 1:
+			return matrix.Color888(0, 0, 102); break;
+		case 2:
+			return matrix.Color888(0, 0, 153); break;
+		case 3:
+			return matrix.Color888(0, 0, 204); break;
+		case 4:
+			return matrix.Color888(0, 0, 255); break;
+		case 5:
+			return matrix.Color888(51, 51, 255); break;
+		case 6:
+			return matrix.Color888(102, 102, 255); break;
+		case 7:
+			return matrix.Color888(153, 153, 255); break;
+		case 8:
+			return matrix.Color888(204, 204, 255); break;
+		}
+		break;
+	case 9:
+		switch(row)
+		{
+		case 0:
+			return matrix.Color888(25, 0, 51); break;
+		case 1:
+			return matrix.Color888(51, 0, 102); break;
+		case 2:
+			return matrix.Color888(76, 0, 153); break;
+		case 3:
+			return matrix.Color888(102, 0, 204); break;
+		case 4:
+			return matrix.Color888(127, 0, 255); break;
+		case 5:
+			return matrix.Color888(153, 51, 255); break;
+		case 6:
+			return matrix.Color888(178, 102, 255); break;
+		case 7:
+			return matrix.Color888(204, 153, 255); break;
+		case 8:
+			return matrix.Color888(229, 204, 255); break;
+		}
+		break;
+	case 10:
+		switch(row)
+		{
+		case 0:
+			return matrix.Color888(51, 0, 51); break;
+		case 1:
+			return matrix.Color888(102, 0, 102); break;
+		case 2:
+			return matrix.Color888(153, 0, 153); break;
+		case 3:
+			return matrix.Color888(204, 0, 204); break;
+		case 4:
+			return matrix.Color888(255, 0, 255); break;
+		case 5:
+			return matrix.Color888(255, 51, 255); break;
+		case 6:
+			return matrix.Color888(255, 102, 255); break;
+		case 7:
+			return matrix.Color888(255, 153, 255); break;
+		case 8:
+			return matrix.Color888(255, 204, 255); break;
+		}
+		break;
+	case 11:
+		switch(row)
+		{
+		case 0:
+			return matrix.Color888(51, 0, 25); break;
+		case 1:
+			return matrix.Color888(102, 0, 51); break;
+		case 2:
+			return matrix.Color888(153, 0, 76); break;
+		case 3:
+			return matrix.Color888(204, 0, 102); break;
+		case 4:
+			return matrix.Color888(255, 0, 127); break;
+		case 5:
+			return matrix.Color888(255, 51, 153); break;
+		case 6:
+			return matrix.Color888(255, 102, 178); break;
+		case 7:
+			return matrix.Color888(255, 153, 204); break;
+		case 8:
+			return matrix.Color888(255, 204, 229); break;
+		}
+		break;
+	case 12:
+		switch(row)
+		{
+		case 0:
+			return matrix.Color888(0, 0, 0); break;
+		case 1:
+			return matrix.Color888(32, 32, 32); break;
+		case 2:
+			return matrix.Color888(64, 64, 64); break;
+		case 3:
+			return matrix.Color888(96, 96, 96); break;
+		case 4:
+			return matrix.Color888(128, 128, 128); break;
+		case 5:
+			return matrix.Color888(160, 160, 160); break;
+		case 6:
+			return matrix.Color888(192, 192, 192); break;
+		case 7:
+			return matrix.Color888(224, 224, 224); break;
+		case 8:
+			return matrix.Color888(255, 255, 255); break;
+		}
+		break;
+	}
 }

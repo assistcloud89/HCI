@@ -52,7 +52,7 @@ void DrawManager::SendData()
 	if(send(hSocket, send_buf, sizeof(send_buf), 0) == SOCKET_ERROR)
 		ErrorHandling("send() error!\n");
 	else
-		std::cout << "sending : " << send_buf << std::endl;
+		std::cout << "send: " << send_buf << std::endl;
 }
 
 void DrawManager::ErrorHandling(char* message)
