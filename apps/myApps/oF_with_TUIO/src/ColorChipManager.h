@@ -1,8 +1,11 @@
 #ifndef _COLOR_CHIP_MANAGER_
 #define _COLOR_CHIP_MANAGER_
 
-#include "Define.h"
 #include <iostream>
+#include "Define.h"
+#include "Coordinate.h"
+#include "LEDManager.h"
+#include "DrawManager.h"
 
 class ColorChipManager
 {
@@ -17,6 +20,12 @@ public:
 					 int id,
 					 float x,
 					 float y);
+
+	ColorChip FindTouchLocation(float x, float y);
+	int FindTouchLocationX(float x);
+	int FindTouchLocationY(float y);
+
+	ColorInfo GetColorInfoOfLocation(ColorChip colorChip);
 };
 
 #endif

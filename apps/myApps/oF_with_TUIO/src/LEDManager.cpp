@@ -194,7 +194,7 @@ int LEDManager::FindTouchLocationX(float x)
 			return 28;
 		else if(PIXEL_X_29 <= x && x < PIXEL_X_30)
 			return 29;
-		else if(PIXEL_X_28 <= x && x < PIXEL_X_29)
+		else if(PIXEL_X_30 <= x && x < PIXEL_X_31)
 			return 30;
 		else
 			return 31;
@@ -279,4 +279,14 @@ int LEDManager::FindTouchLocationY(float y)
 		else
 			return 28;
 	}
+}
+
+ColorInfo LEDManager::GetColor()
+{
+	return mColor;
+}
+
+void LEDManager::SetColor(ColorInfo color)
+{
+	mColor = color;
 }

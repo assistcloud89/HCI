@@ -10,6 +10,12 @@ struct Pixel
 	int y;
 };
 
+struct ColorChip
+{
+	int x;
+	int y;
+};
+
 enum TouchEvent
 {
 	TOUCH_DOWN,

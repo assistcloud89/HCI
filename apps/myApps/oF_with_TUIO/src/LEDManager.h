@@ -42,6 +42,9 @@ public:
 	int FindTouchLocationX(float x);
 	int FindTouchLocationY(float y);
 
+	ColorInfo GetColor();
+	void SetColor(ColorInfo color);
+
 private:
 	std::vector<PixelInfo*>* mPixelTable[29][32]; // mPixelTable[y][x]
 
