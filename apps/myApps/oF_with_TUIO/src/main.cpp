@@ -9,13 +9,13 @@ int main(){
     ofAppGlutWindow window;
 	ofSetupOpenGL(&window, 512,384, OF_WINDOW);			// <-------- setup the GL context
 
-	DrawManager::GetInstance()->Init();
-	DrawManager::GetInstance()->SendData();
+	DrawManager::GetInstance()->Connect();
 
 	// this kicks off the running of my app
 	// can be OF_WINDOW or OF_FULLSCREEN
 	// pass in width and height too:
 	ofRunApp(new TouchManager());
 
-  	//DrawManager::GetInstance()->Close();
+	DrawManager::GetInstance()->Close();
+	DrawManager::GetInstance()->Release();
 }

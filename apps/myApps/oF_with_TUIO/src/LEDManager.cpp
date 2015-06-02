@@ -67,6 +67,7 @@ void LEDManager::DrawMode(TouchEvent event, int id, float x, float y)
 	if(event == TOUCH_UP)
 		return;
 
+	// Find touched pixel's location.
 	Pixel pixel = FindTouchLocation(x, y);
 	std::cout << "Pixel(" << pixel.x << ", " << pixel.y << ")" << std::endl;
 	
@@ -74,6 +75,7 @@ void LEDManager::DrawMode(TouchEvent event, int id, float x, float y)
 	if(!pixelVector->empty() && id == pixelVector->back()->id)
 		return;
 	
+	// Store touched pixel's info.
 	PixelInfo* pixelInfo = new PixelInfo();
 	pixelInfo->id = id;
 	pixelInfo->color = mColor;
@@ -82,7 +84,14 @@ void LEDManager::DrawMode(TouchEvent event, int id, float x, float y)
 	pixelVector->push_back(pixelInfo);
 	std::cout << "Pixel added" << std::endl;
 
-	// send data
+	// Draw touched pixel on LED.
+	char buffer[4];
+	buffer[0] = pixel.x / 10 + '0';
+	buffer[1] = pixel.x % 10 + '0';
+	buffer[2] = pixel.y / 10 + '0';
+	buffer[3] = pixel.y % 10 + '0';
+
+	DrawManager::GetInstance()->WriteData(buffer, 4);
 	
 	// register log
 }
