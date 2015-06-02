@@ -4,9 +4,6 @@
 #include <iostream>
 #include <vector>
 
-#define COLOR_DATA	9
-#define EDIT_DATA	8
-
 struct Pixel
 {
 	int x;
@@ -22,9 +19,18 @@ enum TouchEvent
 
 enum EditorMode
 {
-	EDIT_DRAW,
-	EDIT_MOVE,
-	EDIT_DELETE,
+	EDIT_DRAW = 0,
+	EDIT_MOVE = 1,
+	EDIT_DELETE = 2,
+	EDIT_BACK = 3,
+	EDIT_FORWARD = 4,
+	EDIT_CLEAR = 5,
+};
+
+enum DataType
+{
+	COLOR_DATA = 9,
+	EDIT_DATA = 8,
 };
 
 enum ColorInfo

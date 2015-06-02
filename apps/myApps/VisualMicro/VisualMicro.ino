@@ -18,17 +18,13 @@
 #define C   A2
 #define D   A3
 
-enum DATA_TYPE
+enum DataType
 {
-	COORD_DATA_0 = 0,
-	COORD_DATA_1 = 1,
-	COORD_DATA_2 = 2,
-	COORD_DATA_3 = 3,
 	COLOR_DATA = 9,
 	EDIT_DATA = 8,
 };
 
-enum EDIT_TYPE
+enum EditorMode
 {
 	DRAW = 0,
 	MOVE = 1,
