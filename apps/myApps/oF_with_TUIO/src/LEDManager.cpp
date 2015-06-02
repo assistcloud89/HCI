@@ -13,7 +13,7 @@ LEDManager::LEDManager()
 		}
 	}
 
-	mEdit = EDIT_DRAW;
+	mEditor = EDIT_DRAW;
 	mColor = COLOR_12_8;
 }
 
@@ -48,7 +48,7 @@ void LEDManager::TouchHandle(TouchEvent event, int id, float x, float y)
 {
 	std::cout << "LED" << std::endl;
 
-	switch(mEdit)
+	switch(mEditor)
 	{
 	case EDIT_DRAW:
 		DrawMode(event, id, x, y);
@@ -279,14 +279,4 @@ int LEDManager::FindTouchLocationY(float y)
 		else
 			return 28;
 	}
-}
-
-ColorInfo LEDManager::GetColor()
-{
-	return mColor;
-}
-
-void LEDManager::SetColor(ColorInfo color)
-{
-	mColor = color;
 }

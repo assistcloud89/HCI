@@ -42,13 +42,16 @@ public:
 	int FindTouchLocationX(float x);
 	int FindTouchLocationY(float y);
 
-	ColorInfo GetColor();
-	void SetColor(ColorInfo color);
+	EditorMode GetEditor() { return mEditor; }
+	void SetEditor(EditorMode editor) { mEditor = editor; }
+
+	ColorInfo GetColor() { return mColor; }
+	void SetColor(ColorInfo color) { mColor = color; }
 
 private:
 	std::vector<PixelInfo*>* mPixelTable[29][32]; // mPixelTable[y][x]
 
-	EditorMode mEdit;
+	EditorMode mEditor;
 	ColorInfo mColor;
 };
 

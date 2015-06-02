@@ -193,7 +193,10 @@ void loop()
 				matrix.drawPixel(erasePoint + 3, 30, eraseColor);
 				matrix.drawPixel(erasePoint + 3, 31, eraseColor);				
 
-				currentEdit = nextEdit;
+				if(nextEdit == DRAW ||
+				   nextEdit == MOVE ||
+				   nextEdit == DELETE)
+					currentEdit = nextEdit;
 
 				break;
 			}

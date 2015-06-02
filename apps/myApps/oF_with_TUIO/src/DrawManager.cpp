@@ -105,11 +105,6 @@ void DrawManager::Close()
 	}
 }
 
-void DrawManager::Release()
-{
-	delete pDrawManager;
-}
-
 bool DrawManager::WriteData(char* buffer, unsigned int nbChar)
 {
 	DWORD bytesSend;

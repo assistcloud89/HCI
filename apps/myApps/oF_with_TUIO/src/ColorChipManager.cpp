@@ -26,9 +26,11 @@ void ColorChipManager::TouchHandle(TouchEvent event, int id, float x, float y)
 	if(event == TOUCH_UP)
 		return;
 
-	// Find touched pixel's location.
+	// Find touched color chip's location.
 	ColorChip colorChip = FindTouchLocation(x, y);
 	std::cout << "ColorChip(" << colorChip.x << ", " << colorChip.y << ")" << std::endl;
+	if(colorChip.x == -1 || colorChip.y == -1)
+		return;
 
 	// Update current color info at LEDManager.
 	ColorInfo colorInfo = GetColorInfoOfLocation(colorChip);
@@ -37,7 +39,7 @@ void ColorChipManager::TouchHandle(TouchEvent event, int id, float x, float y)
 	else
 		LEDManager::GetInstance()->SetColor(colorInfo);
 
-	// Draw touched pixel on LED.
+	// Draw touched color chip's color on color zone.
 	char buffer[4];
 	buffer[0] = COLOR_DATA + '0';
 	buffer[1] = colorChip.x + '0';
@@ -68,8 +70,10 @@ int ColorChipManager::FindTouchLocationX(float x)
 			return 2;
 		else if(CHIP_X_3_START <= x && x < CHIP_X_3_END)
 			return 3;
-		else
+		else if(CHIP_X_4_START <= x && x < CHIP_X_4_END)
 			return 4;
+		else
+			return -1;
 	}
 	else
 	{
@@ -79,8 +83,10 @@ int ColorChipManager::FindTouchLocationX(float x)
 			return 6;
 		else if(CHIP_X_7_START <= x && x < CHIP_X_7_END)
 			return 7;
-		else
+		else if(CHIP_X_8_START <= x && x < CHIP_X_8_END)
 			return 8;
+		else
+			return -1;
 	}
 }
 
@@ -94,8 +100,10 @@ int ColorChipManager::FindTouchLocationY(float y)
 			return 1;
 		else if(CHIP_Y_2_START <= y && y < CHIP_Y_2_END)
 			return 2;
-		else
+		else if(CHIP_Y_3_START <= y && y < CHIP_Y_3_END)
 			return 3;
+		else
+			return -1;
 	}
 	else if(CHIP_Y_4_START <= y && y < CHIP_Y_7_END)
 	{
@@ -105,8 +113,10 @@ int ColorChipManager::FindTouchLocationY(float y)
 			return 5;
 		else if(CHIP_Y_6_START <= y && y < CHIP_Y_6_END)
 			return 6;
-		else
+		else if(CHIP_Y_7_START <= y && y < CHIP_Y_7_END)
 			return 7;
+		else
+			return -1;
 	}
 	else
 	{
@@ -118,8 +128,10 @@ int ColorChipManager::FindTouchLocationY(float y)
 			return 10;
 		else if(CHIP_Y_11_START <= y && y < CHIP_Y_11_END)
 			return 11;
-		else
+		else if(CHIP_Y_12_START <= y && y < CHIP_Y_12_END)
 			return 12;
+		else
+			return -1;
 	}
 }
 

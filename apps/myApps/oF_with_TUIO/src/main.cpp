@@ -17,5 +17,4 @@ int main(){
 	ofRunApp(new TouchManager());
 
 	DrawManager::GetInstance()->Close();
-	DrawManager::GetInstance()->Release();
 }

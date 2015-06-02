@@ -1,8 +1,10 @@
 #ifndef _EDITOR_MANAGER_
 #define _EDITOR_MANAGER_
 
-#include "Define.h"
 #include <iostream>
+#include "Define.h"
+#include "DrawManager.h"
+#include "LEDManager.h"
 
 class EditorManager
 {
@@ -17,6 +19,8 @@ public:
 					 int id,
 					 float x,
 					 float y);
+
+	EditorMode FindTouchLocation(float x, float y);
 };
 
 #endif

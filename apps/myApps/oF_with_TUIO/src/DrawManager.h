@@ -20,7 +20,6 @@ public:
 
 	void Connect();
 	void Close();
-	void Release();
 
 	// Writes data from a buffer through the Serial connection
 	// return true on success.

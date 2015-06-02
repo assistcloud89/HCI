@@ -31,6 +31,8 @@ enum EditorMode
 	EDIT_BACK = 3,
 	EDIT_FORWARD = 4,
 	EDIT_CLEAR = 5,
+
+	EDIT_NOT_TOUCHED,
 };
 
 enum DataType
