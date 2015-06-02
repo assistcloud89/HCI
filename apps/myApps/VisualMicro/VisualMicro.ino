@@ -18,16 +18,25 @@
 #define C   A2
 #define D   A3
 
-#define COORD_DATA_0	0 
-#define COORD_DATA_1	1
-#define COORD_DATA_2	2 
-#define COORD_DATA_3	3 
-#define COLOR_DATA		9
-#define EDIT_DATA		8
+enum DATA_TYPE
+{
+	COORD_DATA_0 = 0,
+	COORD_DATA_1 = 1,
+	COORD_DATA_2 = 2,
+	COORD_DATA_3 = 3,
+	COLOR_DATA = 9,
+	EDIT_DATA = 8,
+};
 
-#define DRAW	0
-#define MOVE	1
-#define DELETE	2
+enum EDIT_TYPE
+{
+	DRAW = 0,
+	MOVE = 1,
+	DELETE = 2,
+	BACK = 3,
+	FORWARD = 4,
+	CLEAR = 5,
+};
 
 RGBmatrixPanel matrix(A, B, C, D, CLK, LAT, OE, false);
 
@@ -133,16 +142,6 @@ void loop()
 				// Detach the indicator
 				Serial.read();
 
-				switch(currentEdit)
-				{
-				case DRAW:
-					erasePoint = 3; break;
-				case MOVE:
-					erasePoint = 8; break;
-				case DELETE:
-					erasePoint = 13; break;
-				}
-
 				int nextEdit = Serial.read() - '0';
 				switch(nextEdit)
 				{
@@ -152,6 +151,41 @@ void loop()
 					drawPoint = 8; break;
 				case DELETE:
 					drawPoint = 13; break;
+				case BACK:
+					drawPoint = 18; break;
+				case FORWARD:
+					drawPoint = 23; break;
+				case CLEAR:
+					drawPoint = 28; break;
+				}
+
+				matrix.drawPixel(drawPoint, 30, editColor);
+				matrix.drawPixel(drawPoint, 31, editColor);
+				matrix.drawPixel(drawPoint + 1, 30, editColor);
+				matrix.drawPixel(drawPoint + 1, 31, editColor);
+				matrix.drawPixel(drawPoint + 2, 30, editColor);
+				matrix.drawPixel(drawPoint + 2, 31, editColor);
+				matrix.drawPixel(drawPoint + 3, 30, editColor);
+				matrix.drawPixel(drawPoint + 3, 31, editColor);
+
+				if(nextEdit == BACK ||
+				   nextEdit == FORWARD ||
+				   nextEdit == CLEAR)
+				{
+					erasePoint = drawPoint;
+					delay(100);
+				}
+				else
+				{
+					switch(currentEdit)
+					{
+					case DRAW:
+						erasePoint = 3; break;
+					case MOVE:
+						erasePoint = 8; break;
+					case DELETE:
+						erasePoint = 13; break;
+					}
 				}
 
 				matrix.drawPixel(erasePoint, 30, eraseColor);
@@ -162,15 +196,6 @@ void loop()
 				matrix.drawPixel(erasePoint + 2, 31, eraseColor);
 				matrix.drawPixel(erasePoint + 3, 30, eraseColor);
 				matrix.drawPixel(erasePoint + 3, 31, eraseColor);				
-
-				matrix.drawPixel(drawPoint, 30, editColor);
-				matrix.drawPixel(drawPoint, 31, editColor);
-				matrix.drawPixel(drawPoint + 1, 30, editColor);
-				matrix.drawPixel(drawPoint + 1, 31, editColor);
-				matrix.drawPixel(drawPoint + 2, 30, editColor);
-				matrix.drawPixel(drawPoint + 2, 31, editColor);
-				matrix.drawPixel(drawPoint + 3, 30, editColor);
-				matrix.drawPixel(drawPoint + 3, 31, editColor);
 
 				currentEdit = nextEdit;
 
