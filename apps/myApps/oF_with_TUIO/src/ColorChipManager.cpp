@@ -33,7 +33,7 @@ void ColorChipManager::TouchHandle(TouchEvent event, int id, float x, float y)
 		return;
 
 	// Update current color info at LEDManager.
-	ColorInfo colorInfo = GetColorInfoOfLocation(colorChip);
+	ColorInfo colorInfo = GetColorInfoOfColorChip(colorChip);
 	if(colorInfo == LEDManager::GetInstance()->GetColor())
 		return;
 	else
@@ -135,7 +135,7 @@ int ColorChipManager::FindTouchLocationY(float y)
 	}
 }
 
-ColorInfo ColorChipManager::GetColorInfoOfLocation(ColorChip colorChip)
+ColorInfo ColorChipManager::GetColorInfoOfColorChip(ColorChip colorChip)
 {
 	switch(colorChip.y)
 	{
@@ -439,4 +439,14 @@ ColorInfo ColorChipManager::GetColorInfoOfLocation(ColorChip colorChip)
 		}
 		break;
 	}
+}
+
+ColorChip ColorChipManager::GetColorChipOfColorInfo(ColorInfo colorInfo)
+{
+	ColorChip colorChip;
+
+	colorChip.x = colorInfo % 10;
+	colorChip.y = colorInfo / 10;
+
+	return colorChip;
 }

@@ -5,6 +5,7 @@
 #include "Coordinate.h"
 #include "DrawManager.h"
 #include "TouchHistory.h"
+#include "ColorChipManager.h"
 
 struct PixelInfo
 {

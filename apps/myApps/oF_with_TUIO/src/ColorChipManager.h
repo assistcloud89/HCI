@@ -25,7 +25,8 @@ public:
 	int FindTouchLocationX(float x);
 	int FindTouchLocationY(float y);
 
-	ColorInfo GetColorInfoOfLocation(ColorChip colorChip);
+	ColorInfo GetColorInfoOfColorChip(ColorChip colorChip);
+	ColorChip GetColorChipOfColorInfo(ColorInfo colorInfo);
 };
 
 #endif

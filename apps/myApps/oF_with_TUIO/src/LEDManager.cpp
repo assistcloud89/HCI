@@ -14,7 +14,7 @@ LEDManager::LEDManager()
 	}
 
 	mEditor = EDIT_DRAW;
-	mColor = COLOR_12_8;
+	mColor = COLOR_0_4;
 }
 
 
@@ -109,6 +109,99 @@ void LEDManager::DeleteMode(TouchEvent event, int id, float x, float y)
 	if(event == TOUCH_UP)
 		return;
 
+	// Find touched pixel's location.
+	Pixel pixel = FindTouchLocation(x, y);
+
+	std::vector<PixelInfo*>* pixelVector = mPixelTable[pixel.y][pixel.x];
+	if(pixelVector->empty())
+		return;
+
+	// Find the touch id to be deleted.
+	std::vector<PixelInfo*>::reverse_iterator r_itor;
+	for(r_itor = pixelVector->rbegin(); r_itor != pixelVector->rend(); ++r_itor)
+	{
+		if((*r_itor)->visible)
+			break;
+	}
+
+	int deleteId;
+	if(r_itor == pixelVector->rend())
+		return;
+	else
+		deleteId = (*r_itor)->id;
+
+	// Get pixel list to be deleted.
+	std::vector<Pixel>* deletePixelList;
+	deletePixelList = TouchHistory::GetInstance()->GetPixelList(deleteId); 
+
+	// Set pixels' to be deleted visible false and draw previous pixel on LED.
+	std::vector<Pixel>::iterator itor;
+	for(itor = deletePixelList->begin(); itor != deletePixelList->end(); ++itor)
+	{
+		pixelVector = mPixelTable[(*itor).y][(*itor).x];
+		PixelInfo* deletePixel;
+		ColorInfo drawColorInfo;
+
+		// Set pixels' to be deleted visible false.
+		for(r_itor = pixelVector->rbegin(); r_itor != pixelVector->rend(); ++r_itor)
+		{
+			if((*r_itor)->id == deleteId)
+			{
+				deletePixel = (*r_itor);
+				break;
+			}
+		}
+		deletePixel->visible = false;
+
+		// Draw previous pixel on LED.
+		for(++r_itor; r_itor != pixelVector->rend(); ++r_itor)
+		{
+			if((*r_itor)->visible)
+			{
+				break;
+			}
+		}
+
+		if(r_itor == pixelVector->rend())
+			drawColorInfo = COLOR_12_0;
+		else
+			drawColorInfo = (*r_itor)->color;
+
+		/* Warning : This might not thread safety!! */
+		// Send previous pixel's color.
+		ColorChip drawColor = ColorChipManager::GetInstance()->
+			GetColorChipOfColorInfo(drawColorInfo);
+
+		char buffer[4];
+		buffer[0] = COLOR_DATA + '0';
+		buffer[1] = drawColor.x + '0';
+		buffer[2] = drawColor.y / 10 + '0';
+		buffer[3] = drawColor.y % 10 + '0';
+
+		DrawManager::GetInstance()->WriteData(buffer, 4);
+
+		// Send current coordinate.
+		buffer[0] = (*itor).x / 10 + '0';
+		buffer[1] = (*itor).x % 10 + '0';
+		buffer[2] = (*itor).y / 10 + '0';
+		buffer[3] = (*itor).y % 10 + '0';
+
+		DrawManager::GetInstance()->WriteData(buffer, 4);
+
+		// Send original color.
+		drawColor = ColorChipManager::GetInstance()->
+			GetColorChipOfColorInfo(mColor);
+
+		buffer[0] = COLOR_DATA + '0';
+		buffer[1] = drawColor.x + '0';
+		buffer[2] = drawColor.y / 10 + '0';
+		buffer[3] = drawColor.y % 10 + '0';
+
+		DrawManager::GetInstance()->WriteData(buffer, 4);
+	}
+
+	// Register history.
+	TouchHistory::GetInstance()->PushEditHistory(EDIT_DELETE, deleteId);
 }
 
 Pixel LEDManager::FindTouchLocation(float x, float y)
