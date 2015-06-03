@@ -39,7 +39,7 @@ LEDManager::~LEDManager()
 LEDManager* LEDManager::GetInstance()
 {
 	if(pLEDManager == nullptr)
-		pLEDManager = new LEDManager();
+		pLEDManager = new LEDManager;
 	
 	return pLEDManager;
 }
@@ -75,14 +75,16 @@ void LEDManager::DrawMode(TouchEvent event, int id, float x, float y)
 	if(!pixelVector->empty() && id == pixelVector->back()->id)
 		return;
 	
-	// Store touched pixel's info.
-	PixelInfo* pixelInfo = new PixelInfo();
+	// Add touched pixel's info into pixel table.
+	PixelInfo* pixelInfo = new PixelInfo;
 	pixelInfo->id = id;
 	pixelInfo->color = mColor;
 	pixelInfo->visible = true;
 
 	pixelVector->push_back(pixelInfo);
 	std::cout << "Pixel added" << std::endl;
+
+	// pixel list¿¡ Ãß°¡
 
 	// Draw touched pixel on LED.
 	char buffer[4];
@@ -92,8 +94,6 @@ void LEDManager::DrawMode(TouchEvent event, int id, float x, float y)
 	buffer[3] = pixel.y % 10 + '0';
 
 	DrawManager::GetInstance()->WriteData(buffer, 4);
-	
-	// register log
 }
 
 void LEDManager::MoveMode(TouchEvent event, int id, float x, float y)
@@ -103,6 +103,8 @@ void LEDManager::MoveMode(TouchEvent event, int id, float x, float y)
 
 void LEDManager::DeleteMode(TouchEvent event, int id, float x, float y)
 {
+	if(event == TOUCH_UP)
+		return;
 
 }
 

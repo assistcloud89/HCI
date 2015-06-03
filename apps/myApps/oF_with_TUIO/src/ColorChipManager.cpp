@@ -14,7 +14,7 @@ ColorChipManager::~ColorChipManager()
 ColorChipManager* ColorChipManager::GetInstance()
 {
 	if(pColorChipManager == nullptr)
-		pColorChipManager = new ColorChipManager();
+		pColorChipManager = new ColorChipManager;
 
 	return pColorChipManager;
 }

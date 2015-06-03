@@ -4,6 +4,7 @@
 #include "Define.h"
 #include "Coordinate.h"
 #include "DrawManager.h"
+#include "TouchHistory.h"
 
 struct PixelInfo
 {

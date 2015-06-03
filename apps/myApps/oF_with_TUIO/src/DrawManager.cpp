@@ -13,7 +13,7 @@ DrawManager::~DrawManager()
 DrawManager* DrawManager::GetInstance()
 {
 	if(pDrawManager == nullptr)
-		pDrawManager = new DrawManager();
+		pDrawManager = new DrawManager;
 
 	return pDrawManager;
 }

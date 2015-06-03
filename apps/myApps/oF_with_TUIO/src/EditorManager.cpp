@@ -14,7 +14,7 @@ EditorManager::~EditorManager()
 EditorManager* EditorManager::GetInstance()
 {
 	if(pEditorManager == nullptr)
-		pEditorManager = new EditorManager();
+		pEditorManager = new EditorManager;
 
 	return pEditorManager;
 }
