@@ -50,6 +50,20 @@ public:
 	ColorInfo GetColor() { return mColor; }
 	void SetColor(ColorInfo color) { mColor = color; }
 
+	void HandleEditor(EditorMode editor);
+
+	void BackEdit();
+	void DrawBack(int id);
+	void MoveBack(int id);
+	void DeleteBack(int id);
+
+	void ForwardEdit();
+	void DrawForward(int id);
+	void MoveForward(int id);
+	void DeleteForward(int id);
+
+	void ClearEdit();
+
 private:
 	std::vector<PixelInfo*>* mPixelTable[29][32]; // mPixelTable[y][x]
 

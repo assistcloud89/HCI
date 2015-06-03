@@ -568,3 +568,102 @@ int LEDManager::FindTouchLocationY(float y)
 			return 28;
 	}
 }
+
+void LEDManager::HandleEditor(EditorMode editor)
+{
+	switch(editor)
+	{
+	case EDIT_BACK:
+		BackEdit();
+		break;
+	case EDIT_FORWARD:
+		ForwardEdit();
+		break;
+	case EDIT_CLEAR:
+		ClearEdit();
+		break;
+	}
+}
+
+void LEDManager::BackEdit()
+{
+	if(TouchHistory::GetInstance()->IsEditHistoryEmpty())
+		return;
+
+	std::pair<EditorMode, int> lastEdit = TouchHistory::GetInstance()->GetLastEdit();
+	TouchHistory::GetInstance()->PopEditHistory;
+
+	switch(lastEdit.first)
+	{
+	case EDIT_DRAW:
+		DrawBack(lastEdit.second);
+		break;
+	case EDIT_MOVE:
+		MoveBack(lastEdit.second);
+		break;
+	case EDIT_DELETE:
+		DeleteBack(lastEdit.second);
+		break;
+	}
+
+	TouchHistory::GetInstance()->PushBackHistory(lastEdit);
+}
+
+void LEDManager::DrawBack(int id)
+{
+	
+}
+
+void LEDManager::MoveBack(int id)
+{
+
+}
+
+void LEDManager::DeleteBack(int id)
+{
+
+}
+
+void LEDManager::ForwardEdit()
+{
+	if(TouchHistory::GetInstance()->IsBackHistoryEmpty())
+		return;
+
+	std::pair<EditorMode, int> lastBack = TouchHistory::GetInstance()->GetLastBack();
+	TouchHistory::GetInstance()->PopBackHistory();
+
+	switch(lastBack.first)
+	{
+	case EDIT_DRAW:
+		DrawForward(lastBack.second);
+		break;
+	case EDIT_MOVE:
+		MoveForward(lastBack.second);
+		break;
+	case EDIT_DELETE:
+		DeleteForward(lastBack.second);
+		break;
+	}
+	
+	TouchHistory::GetInstance()->PushEditHistory(lastBack);
+}
+
+void LEDManager::DrawForward(int id)
+{
+
+}
+
+void LEDManager::MoveForward(int id)
+{
+
+}
+
+void LEDManager::DeleteForward(int id)
+{
+
+}
+
+void LEDManager::ClearEdit()
+{
+
+}

@@ -13,11 +13,13 @@ public:
 	static TouchHistory* GetInstance();
 
 	void PushEditHistory(EditorMode edit, int id);
+	void PushEditHistory(std::pair<EditorMode, int> editHistory);
 	std::pair<EditorMode, int> GetLastEdit();
 	void PopEditHistory();
 	bool IsEditHistoryEmpty() { return mEditHistory.empty(); }
 
 	void PushBackHistory(EditorMode edit, int id);
+	void PushBackHistory(std::pair<EditorMode, int> backHistory);
 	std::pair<EditorMode, int> GetLastBack();
 	void PopBackHistory();
 	bool IsBackHistoryEmpty() { return mBackHistory.empty(); }
