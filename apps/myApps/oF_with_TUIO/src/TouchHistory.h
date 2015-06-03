@@ -3,12 +3,6 @@
 
 #include "Define.h"
 
-struct Variation
-{
-	int dx;
-	int dy;
-};
-
 class TouchHistory
 {
 private:
@@ -30,6 +24,11 @@ public:
 
 	void InsertPixelList(int id, Pixel pixel);
 	std::vector<Pixel>* GetPixelList(int id);
+
+	void InsertMoveHistory(int id, Pixel initial);
+	void UpdateMoveHistory(int id, Pixel terminal);
+	bool HasMoveHistory(int id);
+	Variation GetMoveHistory(int id);
 
 private:
 	std::stack<std::pair<EditorMode, int>> mEditHistory;

@@ -79,3 +79,38 @@ std::vector<Pixel>* TouchHistory::GetPixelList(int id)
 	
 	return itor->second;
 }
+
+void TouchHistory::InsertMoveHistory(int id, Pixel initial)
+{
+	std::unordered_map<int, Variation>::iterator itor;
+	itor = mMoveHistory.find(id);
+	if(itor == mMoveHistory.end())
+	{
+		Variation variation = {initial, initial};
+		std::cout << variation.terminal.x << "," << variation.terminal.y << std::endl;
+		mMoveHistory.insert(std::pair<int, Variation>(id, variation));
+	}
+}
+
+void TouchHistory::UpdateMoveHistory(int id, Pixel terminal)
+{
+	std::unordered_map<int, Variation>::iterator itor;
+	itor = mMoveHistory.find(id);
+	if(itor != mMoveHistory.end())
+		itor->second.terminal = terminal;
+}
+
+bool TouchHistory::HasMoveHistory(int id)
+{
+	std::unordered_map<int, Variation>::iterator itor;
+	itor = mMoveHistory.find(id);
+	if(itor == mMoveHistory.end())
+		return false;
+	else
+		return true;
+}
+
+Variation TouchHistory::GetMoveHistory(int id)
+{
+	return mMoveHistory.find(id)->second;
+}

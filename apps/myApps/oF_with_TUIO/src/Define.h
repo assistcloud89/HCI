@@ -18,6 +18,12 @@ struct ColorChip
 	int y;
 };
 
+struct Variation
+{
+	Pixel initial;
+	Pixel terminal;
+};
+
 enum TouchEvent
 {
 	TOUCH_DOWN,
@@ -35,6 +41,18 @@ enum EditorMode
 	EDIT_CLEAR = 5,
 
 	EDIT_NOT_TOUCHED,
+};
+
+enum MoveDirection
+{
+	MOVE_UP,
+	MOVE_UP_RIGHT,
+	MOVE_RIGHT,
+	MOVE_DOWN_RIGHT,
+	MOVE_DOWN,
+	MOVE_DOWN_LEFT,
+	MOVE_LEFT,
+	MOVE_UP_LEFT,
 };
 
 enum DataType

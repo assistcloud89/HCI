@@ -101,7 +101,199 @@ void LEDManager::DrawMode(TouchEvent event, int id, float x, float y)
 
 void LEDManager::MoveMode(TouchEvent event, int id, float x, float y)
 {
+	if(event == TOUCH_UP)
+	{
+		// Register history.
+		TouchHistory::GetInstance()->PushEditHistory(EDIT_MOVE, id);
+		return;
+	}
 
+	// Find touched pixel's location.
+	Pixel pixel = FindTouchLocation(x, y);
+
+	std::vector<PixelInfo*>* pixelVector = mPixelTable[pixel.y][pixel.x];
+
+	if(event == TOUCH_DOWN)
+	{
+		if(pixelVector->empty())
+			return;
+
+		std::vector<PixelInfo*>::reverse_iterator r_itor;
+		for(r_itor = pixelVector->rbegin(); r_itor != pixelVector->rend(); ++r_itor)
+		{
+			if((*r_itor)->visible)
+				break;
+		}
+		if(r_itor == pixelVector->rend())
+			return;
+
+		TouchHistory::GetInstance()->InsertMoveHistory(id, pixel);
+		return;
+	}
+
+	if(!TouchHistory::GetInstance()->HasMoveHistory(id))
+		return;
+
+	// Figure out moved direction. (There are 8 ways of direction.)
+	Variation variation = TouchHistory::GetInstance()->GetMoveHistory(id);
+	if((variation.terminal.x == pixel.x) &&
+	   (variation.terminal.y == pixel.y))
+	   return;
+
+	MoveDirection direction;
+	int dx, dy;
+	if((variation.terminal.x == pixel.x) &&
+	   (variation.terminal.y - 1 == pixel.y))
+	{
+		direction = MOVE_UP;
+		dx = 0; dy = -1;
+	}
+	else if((variation.terminal.x + 1 == pixel.x) &&
+			(variation.terminal.y - 1 == pixel.y))
+	{
+		direction = MOVE_UP_RIGHT;
+		dx = 1; dy = -1;
+	}
+	else if((variation.terminal.x + 1 == pixel.x) &&
+			(variation.terminal.y == pixel.y))
+	{
+		direction = MOVE_RIGHT;
+		dx = 1; dy = 0;
+	}
+	else if((variation.terminal.x + 1 == pixel.x) &&
+			(variation.terminal.y + 1 == pixel.y))
+	{
+		direction = MOVE_DOWN_RIGHT;
+		dx = 1; dy = 1;
+	}
+	else if((variation.terminal.x == pixel.x) &&
+			(variation.terminal.y + 1 == pixel.y))
+	{
+		direction = MOVE_DOWN;
+		dx = 0; dy = 1;
+	}
+	else if((variation.terminal.x - 1 == pixel.x) &&
+			(variation.terminal.y + 1 == pixel.y))
+	{
+		direction = MOVE_DOWN_LEFT;
+		dx = -1; dy = 1;
+	}
+	else if((variation.terminal.x - 1 == pixel.x) &&
+			(variation.terminal.y == pixel.y))
+	{
+		direction = MOVE_LEFT;
+		dx = -1; dy = 0;
+	}
+	else if((variation.terminal.x - 1 == pixel.x) &&
+			(variation.terminal.y - 1 == pixel.y))
+	{
+		direction = MOVE_UP_LEFT;
+		dx = -1; dy = -1;
+	}
+	else
+		return;
+
+	// Bring pixels of touch id to the top of the pixel table.
+	pixelVector = mPixelTable[variation.terminal.y][variation.terminal.x];
+	int updateId;
+	std::vector<PixelInfo*>::reverse_iterator r_itor;
+	for(r_itor = pixelVector->rbegin(); r_itor != pixelVector->rend(); ++r_itor)
+	{
+		if((*r_itor)->visible)
+		{
+			updateId = (*r_itor)->id;
+			break;
+		}
+	}
+
+	std::vector<Pixel>* updatePixelList;
+	updatePixelList = TouchHistory::GetInstance()->GetPixelList(updateId);
+
+	std::vector<Pixel>::iterator itor;
+	for(itor = updatePixelList->begin(); itor != updatePixelList->end(); ++itor)
+	{
+		pixelVector = mPixelTable[(*itor).y][(*itor).x];
+		std::vector<PixelInfo*>::iterator itor_swap;
+		for(itor_swap = pixelVector->begin(); itor_swap != pixelVector->end(); ++itor_swap)
+		{
+			if((*itor_swap)->id == updateId)
+			{
+				pixelVector->push_back((*itor_swap));
+				pixelVector->erase(itor_swap);
+				break;
+			}
+		}
+	}
+
+	// Update terminal.
+	TouchHistory::GetInstance()->UpdateMoveHistory(id, pixel);
+
+	// Move to direction and draw it on LED.
+	for(itor = updatePixelList->begin(); itor != updatePixelList->end(); ++itor)
+	{
+		std::vector<PixelInfo*>* pixelVector = mPixelTable[(*itor).y][(*itor).x];
+
+		// Find the previous touch id of pixel to be moved.
+		std::vector<PixelInfo*>::reverse_iterator r_itor;
+		for(r_itor = pixelVector->rbegin(); r_itor != pixelVector->rend(); ++r_itor)
+		{
+			if((*r_itor)->id != updateId && (*r_itor)->visible)
+				break;
+		}
+
+		// Draw the previous touch id of pixel to be moved on LED.
+		ColorInfo drawColorInfo;
+		if(r_itor == pixelVector->rend())
+			drawColorInfo = COLOR_12_0;
+		else
+			drawColorInfo = (*r_itor)->color;
+
+		ColorChip drawColor = ColorChipManager::GetInstance()->
+			GetColorChipOfColorInfo(drawColorInfo);
+
+		char buffer[4];
+		buffer[0] = COLOR_DATA + '0';
+		buffer[1] = drawColor.x + '0';
+		buffer[2] = drawColor.y / 10 + '0';
+		buffer[3] = drawColor.y % 10 + '0';
+
+		DrawManager::GetInstance()->WriteData(buffer, 4);
+
+		buffer[0] = (*itor).x / 10 + '0';
+		buffer[1] = (*itor).x % 10 + '0';
+		buffer[2] = (*itor).y / 10 + '0';
+		buffer[3] = (*itor).y % 10 + '0';
+
+		DrawManager::GetInstance()->WriteData(buffer, 4);
+
+		// Move pixel.
+		PixelInfo* pixelTomove = pixelVector->back();
+		pixelVector->pop_back();
+
+		(*itor).x = (*itor).x + dx;
+		(*itor).y = (*itor).y + dy;
+		pixelVector = mPixelTable[(*itor).y][(*itor).x];
+
+		pixelVector->push_back(pixelTomove);
+		
+		// Draw it on LED.
+		drawColor = ColorChipManager::GetInstance()->
+			GetColorChipOfColorInfo(mColor);
+
+		buffer[0] = COLOR_DATA + '0';
+		buffer[1] = drawColor.x + '0';
+		buffer[2] = drawColor.y / 10 + '0';
+		buffer[3] = drawColor.y % 10 + '0';
+
+		DrawManager::GetInstance()->WriteData(buffer, 4);
+
+		buffer[0] = (*itor).x / 10 + '0';
+		buffer[1] = (*itor).x % 10 + '0';
+		buffer[2] = (*itor).y / 10 + '0';
+		buffer[3] = (*itor).y % 10 + '0';
+
+		DrawManager::GetInstance()->WriteData(buffer, 4);
+	}
 }
 
 void LEDManager::DeleteMode(TouchEvent event, int id, float x, float y)
@@ -157,9 +349,7 @@ void LEDManager::DeleteMode(TouchEvent event, int id, float x, float y)
 		for(++r_itor; r_itor != pixelVector->rend(); ++r_itor)
 		{
 			if((*r_itor)->visible)
-			{
 				break;
-			}
 		}
 
 		if(r_itor == pixelVector->rend())
