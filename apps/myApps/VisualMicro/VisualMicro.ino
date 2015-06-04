@@ -184,6 +184,9 @@ void loop()
 					}
 				}
 
+				if(currentEdit == nextEdit)
+					break;
+
 				matrix.drawPixel(erasePoint, 30, eraseColor);
 				matrix.drawPixel(erasePoint, 31, eraseColor);
 				matrix.drawPixel(erasePoint + 1, 30, eraseColor);

@@ -27,6 +27,8 @@ public:
 
 	ColorInfo GetColorInfoOfColorChip(ColorChip colorChip);
 	ColorChip GetColorChipOfColorInfo(ColorInfo colorInfo);
+
+	void ClearEdit();
 };
 
 #endif

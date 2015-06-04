@@ -64,12 +64,6 @@ void TouchHistory::PopBackHistory()
 		mBackHistory.pop();
 }
 
-void TouchHistory::ClearBackHistory()
-{
-	while(!mBackHistory.empty())
-		mBackHistory.pop();
-}
-
 void TouchHistory::InsertPixelList(int id, Pixel pixel)
 {
 	std::unordered_map<int, std::vector<Pixel>*>::iterator itor;
@@ -143,4 +137,34 @@ bool TouchHistory::HasMoveHistory(int id)
 Variation TouchHistory::GetMoveHistory(int id)
 {
 	return mMoveHistory.find(id)->second;
+}
+
+void TouchHistory::ClearEdit()
+{
+	ClearEditHistory();
+	ClearBackHistory();
+	ClearPixelList();
+	ClearMoveHistory();
+}
+
+void TouchHistory::ClearEditHistory()
+{
+	while(!mEditHistory.empty())
+		mEditHistory.pop();
+}
+
+void TouchHistory::ClearBackHistory()
+{
+	while(!mBackHistory.empty())
+		mBackHistory.pop();
+}
+
+void TouchHistory::ClearPixelList()
+{
+	mPixelList.clear();
+}
+
+void TouchHistory::ClearMoveHistory()
+{
+	mMoveHistory.clear();
 }

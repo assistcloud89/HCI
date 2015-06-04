@@ -5,6 +5,8 @@
 #include "Define.h"
 #include "DrawManager.h"
 #include "LEDManager.h"
+#include "TouchHistory.h"
+#include "ColorChipManager.h"
 
 class EditorManager
 {

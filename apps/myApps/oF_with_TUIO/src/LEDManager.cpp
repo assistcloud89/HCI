@@ -4,36 +4,34 @@ static LEDManager* pLEDManager = nullptr;
 
 LEDManager::LEDManager()
 {
-	for(int i = 0; i < 29; ++i)
+	for(int y = 0; y < 29; ++y)
 	{
-		for(int j = 0; j < 32; ++j)
+		for(int x = 0; x < 32; ++x)
 		{
-			mPixelTable[i][j] = new std::vector<PixelInfo*>;
-			mPixelTable[i][j]->reserve(15);
+			mPixelTable[y][x] = new std::vector < PixelInfo* > ;
+			mPixelTable[y][x]->reserve(15);
 		}
 	}
 
 	mEditor = EDIT_DRAW;
 	mColor = COLOR_0_4;
-
-	LEDLock = 0;
 }
 
 
 LEDManager::~LEDManager()
 {
-	for(int i = 0; i < 29; ++i)
+	for(int y = 0; y < 29; ++y)
 	{
-		for(int j = 0; j < 32; ++j)
+		for(int x = 0; x < 32; ++x)
 		{
 			std::vector<PixelInfo*>::iterator iter;
-			for(iter = mPixelTable[i][j]->begin();
-				iter != mPixelTable[i][j]->end();
+			for(iter = mPixelTable[y][x]->begin();
+				iter != mPixelTable[y][x]->end();
 				++iter)
 			{
 				delete (*iter);
 			}
-			mPixelTable[i][j]->clear();
+			mPixelTable[y][x]->clear();
 		}
 	}
 }
@@ -49,8 +47,6 @@ LEDManager* LEDManager::GetInstance()
 void LEDManager::TouchHandle(TouchEvent event, int id, float x, float y)
 {
 	std::cout << "LED" << std::endl;
-
-	++LEDLock;
 
 	switch(mEditor)
 	{
@@ -72,9 +68,6 @@ void LEDManager::DrawMode(TouchEvent event, int id, float x, float y)
 	{
 		// Register history.
 		TouchHistory::GetInstance()->PushEditHistory(EDIT_DRAW, id);
-
-		--LEDLock;
-
 		return;
 	}
 
@@ -114,8 +107,6 @@ void LEDManager::MoveMode(TouchEvent event, int id, float x, float y)
 		if(TouchHistory::GetInstance()->HasMoveHistory(id))
 			TouchHistory::GetInstance()->PushEditHistory(EDIT_MOVE, id);
 		
-		--LEDLock;
-
 		return;
 	}
 
@@ -353,11 +344,7 @@ void LEDManager::MoveMode(TouchEvent event, int id, float x, float y)
 void LEDManager::DeleteMode(TouchEvent event, int id, float x, float y)
 {
 	if(event == TOUCH_UP)
-	{
-		--LEDLock;
-
 		return;
-	}
 
 	// Find touched pixel's location.
 	Pixel pixel = FindTouchLocation(x, y);
@@ -1199,5 +1186,66 @@ void LEDManager::DeleteForward(int id)
 
 void LEDManager::ClearEdit()
 {
+	for(int y = 0; y < 29; ++y)
+	{
+		for(int x = 0; x < 32; ++x)
+		{
+			std::vector<PixelInfo*>::iterator iter;
+			for(iter = mPixelTable[y][x]->begin();
+				iter != mPixelTable[y][x]->end();
+				++iter)
+			{
+				delete (*iter);
+			}
+			mPixelTable[y][x]->clear();
+		}
+	}
 
+	mEditor = EDIT_DRAW;
+	mColor = COLOR_0_4;
+
+	for(int y = 0; y < 29; ++y)
+	{
+		for(int x = 0; x < 32; ++x)
+		{
+			mPixelTable[y][x] = new std::vector < PixelInfo* > ;
+			mPixelTable[y][x]->reserve(15);
+		}
+	}
+
+	ColorInfo drawColorInfo = COLOR_12_0;
+	ColorChip drawColor = ColorChipManager::GetInstance()->
+		GetColorChipOfColorInfo(drawColorInfo);
+
+	char buffer[4];
+	buffer[0] = COLOR_DATA + '0';
+	buffer[1] = drawColor.x + '0';
+	buffer[2] = drawColor.y / 10 + '0';
+	buffer[3] = drawColor.y % 10 + '0';
+
+	DrawManager::GetInstance()->WriteData(buffer, 4);
+
+	for(int y = 0; y < 29; ++y)
+	{
+		for(int x = 0; x < 32; ++x)
+		{
+			buffer[0] = x / 10 + '0';
+			buffer[1] = x % 10 + '0';
+			buffer[2] = y / 10 + '0';
+			buffer[3] = y % 10 + '0';
+
+			DrawManager::GetInstance()->WriteData(buffer, 4);
+		}
+	}
+
+	// Color zone
+	drawColor = ColorChipManager::GetInstance()->
+		GetColorChipOfColorInfo(mColor);
+
+	buffer[0] = COLOR_DATA + '0';
+	buffer[1] = drawColor.x + '0';
+	buffer[2] = drawColor.y / 10 + '0';
+	buffer[3] = drawColor.y % 10 + '0';
+
+	DrawManager::GetInstance()->WriteData(buffer, 4);
 }

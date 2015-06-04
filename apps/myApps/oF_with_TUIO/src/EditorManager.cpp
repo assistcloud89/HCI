@@ -41,8 +41,18 @@ void EditorManager::TouchHandle(TouchEvent event, int id, float x, float y)
 		   editor == EDIT_MOVE ||
 		   editor == EDIT_DELETE)
 			LEDManager::GetInstance()->SetEditor(editor);
-		else
+		else if(editor == EDIT_BACK ||
+				editor == EDIT_FORWARD)
 			LEDManager::GetInstance()->HandleEditor(editor);
+		else if(editor == EDIT_CLEAR)
+		{
+			editor = EDIT_DRAW;
+			LEDManager::GetInstance()->ClearEdit();
+			TouchHistory::GetInstance()->ClearEdit();
+			ColorChipManager::GetInstance()->ClearEdit();
+		}
+		else
+			return;
 	}
 
 	// Mark touched editor at editor zone.
@@ -76,3 +86,4 @@ EditorMode EditorManager::FindTouchLocation(float x, float y)
 	else
 		return EDIT_NOT_TOUCHED;
 }
+

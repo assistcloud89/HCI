@@ -64,15 +64,11 @@ public:
 
 	void ClearEdit();
 
-	int GetLEDLock() { return LEDLock; }
-
 private:
 	std::vector<PixelInfo*>* mPixelTable[29][32]; // mPixelTable[y][x]
 
 	EditorMode mEditor;
 	ColorInfo mColor;
-
-	int LEDLock; // Need to change to semaphore!!!!!
 };
 
 #endif

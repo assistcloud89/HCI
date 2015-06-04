@@ -22,7 +22,6 @@ public:
 	void PushBackHistory(std::pair<EditorMode, int> backHistory);
 	std::pair<EditorMode, int> GetLastBack();
 	void PopBackHistory();
-	void ClearBackHistory();
 	bool IsBackHistoryEmpty() { return mBackHistory.empty(); }
 
 	void InsertPixelList(int id, Pixel pixel);
@@ -34,11 +33,17 @@ public:
 	bool HasMoveHistory(int id);
 	Variation GetMoveHistory(int id);
 
+	void ClearEdit();
+	void ClearEditHistory();
+	void ClearBackHistory();
+	void ClearPixelList();
+	void ClearMoveHistory();
+
 private:
 	std::stack<std::pair<EditorMode, int>> mEditHistory;
 	std::stack<std::pair<EditorMode, int>> mBackHistory;
 	std::unordered_map<int, std::vector<Pixel>*> mPixelList;
-	std::unordered_map<int, Variation> mMoveHistory; // leak 주의!(backhistory 비울 때)
+	std::unordered_map<int, Variation> mMoveHistory;
 };
 
 #endif

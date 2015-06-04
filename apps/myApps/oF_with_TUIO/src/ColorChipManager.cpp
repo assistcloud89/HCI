@@ -450,3 +450,19 @@ ColorChip ColorChipManager::GetColorChipOfColorInfo(ColorInfo colorInfo)
 
 	return colorChip;
 }
+
+void ColorChipManager::ClearEdit()
+{
+	ColorInfo colorInfo = COLOR_0_4;
+	LEDManager::GetInstance()->SetColor(colorInfo);
+	ColorChip colorChip = GetColorChipOfColorInfo(colorInfo);
+
+	// Draw touched color chip's color on color zone.
+	char buffer[4];
+	buffer[0] = COLOR_DATA + '0';
+	buffer[1] = colorChip.x + '0';
+	buffer[2] = colorChip.y / 10 + '0';
+	buffer[3] = colorChip.y % 10 + '0';
+
+	DrawManager::GetInstance()->WriteData(buffer, 4);
+}
