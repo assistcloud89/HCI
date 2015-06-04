@@ -1,7 +1,7 @@
 # HCI
 Human Computer Interaction @ NHN NEXT 2015
 
-[[(https://github.com/hoonihooni/HCI/blob/master/images/20150604_172132.jpg)]]
+![Screenshot](https://github.com/hoonihooni/HCI/blob/master/images/20150604_172132.jpg)
 
 #### This project used below
 * Visual studio 2013  
