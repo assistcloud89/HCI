@@ -15,6 +15,8 @@ LEDManager::LEDManager()
 
 	mEditor = EDIT_DRAW;
 	mColor = COLOR_0_4;
+
+	LEDLock = 0;
 }
 
 
@@ -48,6 +50,8 @@ void LEDManager::TouchHandle(TouchEvent event, int id, float x, float y)
 {
 	std::cout << "LED" << std::endl;
 
+	++LEDLock;
+
 	switch(mEditor)
 	{
 	case EDIT_DRAW:
@@ -68,6 +72,9 @@ void LEDManager::DrawMode(TouchEvent event, int id, float x, float y)
 	{
 		// Register history.
 		TouchHistory::GetInstance()->PushEditHistory(EDIT_DRAW, id);
+
+		--LEDLock;
+
 		return;
 	}
 
@@ -107,6 +114,8 @@ void LEDManager::MoveMode(TouchEvent event, int id, float x, float y)
 		if(TouchHistory::GetInstance()->HasMoveHistory(id))
 			TouchHistory::GetInstance()->PushEditHistory(EDIT_MOVE, id);
 		
+		--LEDLock;
+
 		return;
 	}
 
@@ -344,7 +353,11 @@ void LEDManager::MoveMode(TouchEvent event, int id, float x, float y)
 void LEDManager::DeleteMode(TouchEvent event, int id, float x, float y)
 {
 	if(event == TOUCH_UP)
+	{
+		--LEDLock;
+
 		return;
+	}
 
 	// Find touched pixel's location.
 	Pixel pixel = FindTouchLocation(x, y);

@@ -116,23 +116,25 @@ void TouchManager::TouchedSectionHandle(TouchEvent event,
 		return;
 	}
 
-
-	if(IsInEditorSection(touch.x, touch.y))
+	if(LEDManager::GetInstance()->GetLEDLock() == 0)
 	{
-		EditorManager::GetInstance()->TouchHandle(event,
+		if(IsInEditorSection(touch.x, touch.y))
+		{
+			EditorManager::GetInstance()->TouchHandle(event,
 													  touch.id,
 													  touch.x,
 													  touch.y);
-		return;
-	}
+			return;
+		}
 
-	if(IsInColorChipSection(touch.x, touch.y))
-	{
-		ColorChipManager::GetInstance()->TouchHandle(event,
-													 touch.id,
-													 touch.x,
-													 touch.y);
-		return;
+		if(IsInColorChipSection(touch.x, touch.y))
+		{
+			ColorChipManager::GetInstance()->TouchHandle(event,
+														 touch.id,
+														 touch.x,
+														 touch.y);
+			return;
+		}
 	}
 }
 
