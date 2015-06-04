@@ -196,12 +196,14 @@ void LEDManager::MoveMode(TouchEvent event, int id, float x, float y)
 	// Bring pixels of touch id to the top of the pixel table.
 	pixelVector = mPixelTable[variation.terminal.y][variation.terminal.x];
 	int updateId;
+	ColorInfo updateColor;
 	std::vector<PixelInfo*>::reverse_iterator r_itor;
 	for(r_itor = pixelVector->rbegin(); r_itor != pixelVector->rend(); ++r_itor)
 	{
 		if((*r_itor)->visible)
 		{
 			updateId = (*r_itor)->id;
+			updateColor = (*r_itor)->color;
 			break;
 		}
 	}
@@ -212,6 +214,10 @@ void LEDManager::MoveMode(TouchEvent event, int id, float x, float y)
 	std::vector<Pixel>::iterator itor;
 	for(itor = updatePixelList->begin(); itor != updatePixelList->end(); ++itor)
 	{
+		if(!((0 <= (*itor).x && (*itor).x < 32) &&
+			(0 <= (*itor).y && (*itor).y < 29)))
+			continue;
+
 		pixelVector = mPixelTable[(*itor).y][(*itor).x];
 		std::vector<PixelInfo*>::iterator itor_swap;
 		for(itor_swap = pixelVector->begin(); itor_swap != pixelVector->end(); ++itor_swap)
@@ -223,6 +229,15 @@ void LEDManager::MoveMode(TouchEvent event, int id, float x, float y)
 				break;
 			}
 		}
+		if(itor_swap == pixelVector->end())
+		{
+			PixelInfo* pixelInfo = new PixelInfo;
+			pixelInfo->id = updateId;
+			pixelInfo->color = updateColor;
+			pixelInfo->visible = true;
+
+			pixelVector->push_back(pixelInfo);
+		}
 	}
 
 	// Update terminal.
@@ -231,6 +246,10 @@ void LEDManager::MoveMode(TouchEvent event, int id, float x, float y)
 	// Move to direction and draw it on LED.
 	for(itor = updatePixelList->begin(); itor != updatePixelList->end(); ++itor)
 	{
+		if(!((0 <= (*itor).x && (*itor).x < 32) &&
+			(0 <= (*itor).y && (*itor).y < 29)))
+			continue;
+
 		std::vector<PixelInfo*>* pixelVector = mPixelTable[(*itor).y][(*itor).x];
 
 		// Find the previous touch id of pixel to be moved.
@@ -266,17 +285,6 @@ void LEDManager::MoveMode(TouchEvent event, int id, float x, float y)
 
 		DrawManager::GetInstance()->WriteData(buffer, 4);
 
-		// Move pixel.
-		PixelInfo* pixelTomove = pixelVector->back();
-		pixelVector->pop_back();
-
-		(*itor).x = (*itor).x + dx;
-		(*itor).y = (*itor).y + dy;
-		pixelVector = mPixelTable[(*itor).y][(*itor).x];
-
-		pixelVector->push_back(pixelTomove);
-		
-		// Draw it on LED.
 		drawColor = ColorChipManager::GetInstance()->
 			GetColorChipOfColorInfo(mColor);
 
@@ -286,7 +294,33 @@ void LEDManager::MoveMode(TouchEvent event, int id, float x, float y)
 		buffer[3] = drawColor.y % 10 + '0';
 
 		DrawManager::GetInstance()->WriteData(buffer, 4);
+	}
 
+	for(itor = updatePixelList->begin(); itor != updatePixelList->end(); ++itor)
+	{
+		if(!((0 <= (*itor).x && (*itor).x < 32) &&
+			(0 <= (*itor).y && (*itor).y < 29)))
+			continue;
+
+		std::vector<PixelInfo*>* pixelVector = mPixelTable[(*itor).y][(*itor).x];
+
+		// Move pixel.
+		PixelInfo* pixelTomove = pixelVector->back();
+		pixelVector->pop_back();
+
+		(*itor).x = (*itor).x + dx;
+		(*itor).y = (*itor).y + dy;
+
+		if(!((0 <= (*itor).x && (*itor).x < 32) &&
+			(0 <= (*itor).y && (*itor).y < 29)))
+			continue;
+
+		pixelVector = mPixelTable[(*itor).y][(*itor).x];
+
+		pixelVector->push_back(pixelTomove);
+		
+		// Draw it on LED.
+		char buffer[4];
 		buffer[0] = (*itor).x / 10 + '0';
 		buffer[1] = (*itor).x % 10 + '0';
 		buffer[2] = (*itor).y / 10 + '0';
@@ -330,6 +364,10 @@ void LEDManager::DeleteMode(TouchEvent event, int id, float x, float y)
 	std::vector<Pixel>::iterator itor;
 	for(itor = deletePixelList->begin(); itor != deletePixelList->end(); ++itor)
 	{
+		if(!((0 <= (*itor).x && (*itor).x < 32) &&
+			(0 <= (*itor).y && (*itor).y < 29)))
+			continue;
+
 		pixelVector = mPixelTable[(*itor).y][(*itor).x];
 		PixelInfo* deletePixel;
 		ColorInfo drawColorInfo;
@@ -696,6 +734,10 @@ void LEDManager::DeleteBack(int id)
 	std::vector<Pixel>::iterator itor;
 	for(itor = drawPixelList->begin(); itor != drawPixelList->end(); ++itor)
 	{
+		if(!((0 <= (*itor).x && (*itor).x < 32) &&
+			(0 <= (*itor).y && (*itor).y < 29)))
+			continue;
+
 		std::vector<PixelInfo*>* pixelVector = mPixelTable[(*itor).y][(*itor).x];
 
 		// Set pixels' to draw visible true.
