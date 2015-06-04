@@ -935,7 +935,57 @@ void LEDManager::ForwardEdit()
 
 void LEDManager::DrawForward(int id)
 {
+	// Get pixel list to draw.
+	std::vector<Pixel>* drawPixelList;
+	drawPixelList = TouchHistory::GetInstance()->GetPixelList(id);
+	if(drawPixelList == nullptr)
+		return;
 
+	// Set pixels' to draw visible true and draw last visible pixel on LED.
+	std::vector<Pixel>::iterator itor;
+	for(itor = drawPixelList->begin(); itor != drawPixelList->end(); ++itor)
+	{
+		if(!((0 <= (*itor).x && (*itor).x < 32) &&
+			(0 <= (*itor).y && (*itor).y < 29)))
+			continue;
+
+		std::vector<PixelInfo*>* pixelVector = mPixelTable[(*itor).y][(*itor).x];
+
+		// Set pixels' to draw visible true.
+		std::vector<PixelInfo*>::reverse_iterator r_itor;
+		for(r_itor = pixelVector->rbegin(); r_itor != pixelVector->rend(); ++r_itor)
+		{
+			if((*r_itor)->id == id)
+			{
+				(*r_itor)->visible = true;
+				break;
+			}
+		}
+
+		// Draw last visible pixel on LED.
+		if(r_itor == pixelVector->rbegin())
+		{
+			ColorInfo drawColorInfo = (*r_itor)->color;
+			ColorChip drawColor = ColorChipManager::GetInstance()->
+				GetColorChipOfColorInfo(drawColorInfo);
+
+			char buffer[4];
+			buffer[0] = COLOR_DATA + '0';
+			buffer[1] = drawColor.x + '0';
+			buffer[2] = drawColor.y / 10 + '0';
+			buffer[3] = drawColor.y % 10 + '0';
+
+			DrawManager::GetInstance()->WriteData(buffer, 4);
+
+			// Send current coordinate.
+			buffer[0] = (*itor).x / 10 + '0';
+			buffer[1] = (*itor).x % 10 + '0';
+			buffer[2] = (*itor).y / 10 + '0';
+			buffer[3] = (*itor).y % 10 + '0';
+
+			DrawManager::GetInstance()->WriteData(buffer, 4);
+		}
+	}
 }
 
 void LEDManager::MoveForward(int id)
