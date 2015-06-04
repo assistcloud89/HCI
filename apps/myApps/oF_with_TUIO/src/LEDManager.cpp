@@ -990,7 +990,124 @@ void LEDManager::DrawForward(int id)
 
 void LEDManager::MoveForward(int id)
 {
+	// Swap initial pixel and terminal pixel and get variation info.
+	TouchHistory::GetInstance()->RevertMoveHistory(id);
+	Variation variation = TouchHistory::GetInstance()->GetMoveHistory(id);
 
+	// Get pixel list and color to draw.
+	PixelInfo* updatePixelInfo = mPixelTable[variation.initial.y][variation.initial.x]->back();
+	int updateId = updatePixelInfo->id;
+	ColorInfo updateColor = updatePixelInfo->color;
+	std::vector<Pixel>* updatePixelList = TouchHistory::GetInstance()->GetPixelList(updateId);
+	if(updatePixelList == nullptr)
+		return;
+
+	// Move to direction and draw it on LED.
+	std::vector<Pixel>::iterator itor;
+	for(itor = updatePixelList->begin(); itor != updatePixelList->end(); ++itor)
+	{
+		if(!((0 <= (*itor).x && (*itor).x < 32) &&
+			(0 <= (*itor).y && (*itor).y < 29)))
+			continue;
+
+		std::vector<PixelInfo*>* pixelVector = mPixelTable[(*itor).y][(*itor).x];
+
+		// Find the previous touch id of pixel to be moved.
+		std::vector<PixelInfo*>::reverse_iterator r_itor;
+		for(r_itor = pixelVector->rbegin(); r_itor != pixelVector->rend(); ++r_itor)
+		{
+			if((*r_itor)->id != updateId && (*r_itor)->visible)
+				break;
+		}
+
+		// Draw the previous touch id of pixel to be moved on LED.
+		ColorInfo drawColorInfo;
+		if(r_itor == pixelVector->rend())
+			drawColorInfo = COLOR_12_0;
+		else
+			drawColorInfo = (*r_itor)->color;
+
+		ColorChip drawColor = ColorChipManager::GetInstance()->
+			GetColorChipOfColorInfo(drawColorInfo);
+
+		char buffer[4];
+		buffer[0] = COLOR_DATA + '0';
+		buffer[1] = drawColor.x + '0';
+		buffer[2] = drawColor.y / 10 + '0';
+		buffer[3] = drawColor.y % 10 + '0';
+
+		DrawManager::GetInstance()->WriteData(buffer, 4);
+
+		buffer[0] = (*itor).x / 10 + '0';
+		buffer[1] = (*itor).x % 10 + '0';
+		buffer[2] = (*itor).y / 10 + '0';
+		buffer[3] = (*itor).y % 10 + '0';
+
+		DrawManager::GetInstance()->WriteData(buffer, 4);
+
+		drawColor = ColorChipManager::GetInstance()->
+			GetColorChipOfColorInfo(mColor);
+
+		buffer[0] = COLOR_DATA + '0';
+		buffer[1] = drawColor.x + '0';
+		buffer[2] = drawColor.y / 10 + '0';
+		buffer[3] = drawColor.y % 10 + '0';
+
+		DrawManager::GetInstance()->WriteData(buffer, 4);
+	}
+
+	int dx = variation.terminal.x - variation.initial.x;
+	int dy = variation.terminal.y - variation.initial.y;
+	for(itor = updatePixelList->begin(); itor != updatePixelList->end(); ++itor)
+	{
+		// Move pixel.
+		int curX = (*itor).x;
+		int curY = (*itor).y;
+		int nextX = (*itor).x + dx;
+		int nextY = (*itor).y + dy;
+
+		(*itor).x = (*itor).x + dx;
+		(*itor).y = (*itor).y + dy;
+
+		if(!((0 <= nextX && nextX < 32) &&
+			(0 <= nextY && nextY < 29)))
+			continue;
+
+		if(!((0 <= curX && curX < 32) &&
+			(0 <= curY && curY < 29)))
+		{
+			// When pixel outside of LED move inside of LED.
+			std::vector<PixelInfo*>* pixelVector = mPixelTable[nextY][nextX];
+
+			PixelInfo* pixelInfo = new PixelInfo;
+			pixelInfo->id = id;
+			pixelInfo->color = updateColor;
+			pixelInfo->visible = true;
+
+			pixelVector->push_back(pixelInfo);
+		}
+		else
+		{
+			// When pixel inside of LED move inside of LED.
+			std::vector<PixelInfo*>* pixelVector = mPixelTable[curY][curX];
+
+			PixelInfo* pixelTomove = pixelVector->back();
+			pixelVector->pop_back();
+
+			pixelVector = mPixelTable[nextY][nextX];
+
+			pixelVector->push_back(pixelTomove);
+		}
+
+		// Draw it on LED.
+		char buffer[4];
+		buffer[0] = nextX / 10 + '0';
+		buffer[1] = nextX % 10 + '0';
+		buffer[2] = nextY / 10 + '0';
+		buffer[3] = nextY % 10 + '0';
+
+		DrawManager::GetInstance()->WriteData(buffer, 4);
+	}
 }
 
 void LEDManager::DeleteForward(int id)
