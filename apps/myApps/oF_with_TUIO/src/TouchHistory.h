@@ -22,6 +22,7 @@ public:
 	void PushBackHistory(std::pair<EditorMode, int> backHistory);
 	std::pair<EditorMode, int> GetLastBack();
 	void PopBackHistory();
+	void ClearBackHistory();
 	bool IsBackHistoryEmpty() { return mBackHistory.empty(); }
 
 	void InsertPixelList(int id, Pixel pixel);

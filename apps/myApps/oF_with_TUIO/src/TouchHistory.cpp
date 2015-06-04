@@ -22,6 +22,8 @@ TouchHistory* TouchHistory::GetInstance()
 
 void TouchHistory::PushEditHistory(EditorMode edit, int id)
 {
+	ClearBackHistory();
+
 	mEditHistory.push(std::pair<EditorMode, int>(edit, id));
 }
 
@@ -59,6 +61,12 @@ std::pair<EditorMode, int> TouchHistory::GetLastBack()
 void TouchHistory::PopBackHistory()
 {
 	if(!mBackHistory.empty())
+		mBackHistory.pop();
+}
+
+void TouchHistory::ClearBackHistory()
+{
+	while(!mBackHistory.empty())
 		mBackHistory.pop();
 }
 
