@@ -110,6 +110,18 @@ void TouchHistory::UpdateMoveHistory(int id, Pixel terminal)
 		itor->second.terminal = terminal;
 }
 
+void TouchHistory::RevertMoveHistory(int id)
+{
+	std::unordered_map<int, Variation>::iterator itor;
+	itor = mMoveHistory.find(id);
+	if(itor != mMoveHistory.end())
+	{
+		Pixel temp = itor->second.initial;
+		itor->second.initial = itor->second.terminal;
+		itor->second.terminal = temp;
+	}
+}
+
 bool TouchHistory::HasMoveHistory(int id)
 {
 	std::unordered_map<int, Variation>::iterator itor;

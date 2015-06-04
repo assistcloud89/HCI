@@ -29,6 +29,7 @@ public:
 
 	void InsertMoveHistory(int id, Pixel initial);
 	void UpdateMoveHistory(int id, Pixel terminal);
+	void RevertMoveHistory(int id);
 	bool HasMoveHistory(int id);
 	Variation GetMoveHistory(int id);
 
