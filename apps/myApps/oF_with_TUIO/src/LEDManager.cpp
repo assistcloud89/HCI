@@ -229,15 +229,6 @@ void LEDManager::MoveMode(TouchEvent event, int id, float x, float y)
 				break;
 			}
 		}
-		if(itor_swap == pixelVector->end())
-		{
-			PixelInfo* pixelInfo = new PixelInfo;
-			pixelInfo->id = updateId;
-			pixelInfo->color = updateColor;
-			pixelInfo->visible = true;
-
-			pixelVector->push_back(pixelInfo);
-		}
 	}
 
 	// Update terminal.
@@ -298,33 +289,51 @@ void LEDManager::MoveMode(TouchEvent event, int id, float x, float y)
 
 	for(itor = updatePixelList->begin(); itor != updatePixelList->end(); ++itor)
 	{
-		if(!((0 <= (*itor).x && (*itor).x < 32) &&
-			(0 <= (*itor).y && (*itor).y < 29)))
-			continue;
-
-		std::vector<PixelInfo*>* pixelVector = mPixelTable[(*itor).y][(*itor).x];
-
 		// Move pixel.
-		PixelInfo* pixelTomove = pixelVector->back();
-		pixelVector->pop_back();
+		int curX = (*itor).x;
+		int curY = (*itor).y;
+		int nextX = (*itor).x + dx;
+		int nextY = (*itor).y + dy;
 
 		(*itor).x = (*itor).x + dx;
 		(*itor).y = (*itor).y + dy;
 
-		if(!((0 <= (*itor).x && (*itor).x < 32) &&
-			(0 <= (*itor).y && (*itor).y < 29)))
+		if(!((0 <= nextX && nextX < 32) &&
+			(0 <= nextY && nextY < 29)))
 			continue;
 
-		pixelVector = mPixelTable[(*itor).y][(*itor).x];
+		if(!((0 <= curX && curX < 32) &&
+			(0 <= curY && curY < 29)))
+		{
+			// When pixel outside of LED move inside of LED.
+			std::vector<PixelInfo*>* pixelVector = mPixelTable[nextY][nextX];
 
-		pixelVector->push_back(pixelTomove);
-		
+			PixelInfo* pixelInfo = new PixelInfo;
+			pixelInfo->id = updateId;
+			pixelInfo->color = updateColor;
+			pixelInfo->visible = true;
+
+			pixelVector->push_back(pixelInfo);
+		}
+		else
+		{
+			// When pixel inside of LED move inside of LED.
+			std::vector<PixelInfo*>* pixelVector = mPixelTable[curY][curX];
+
+			PixelInfo* pixelTomove = pixelVector->back();
+			pixelVector->pop_back();
+
+			pixelVector = mPixelTable[nextY][nextX];
+
+			pixelVector->push_back(pixelTomove);
+		}
+
 		// Draw it on LED.
 		char buffer[4];
-		buffer[0] = (*itor).x / 10 + '0';
-		buffer[1] = (*itor).x % 10 + '0';
-		buffer[2] = (*itor).y / 10 + '0';
-		buffer[3] = (*itor).y % 10 + '0';
+		buffer[0] = nextX / 10 + '0';
+		buffer[1] = nextX % 10 + '0';
+		buffer[2] = nextY / 10 + '0';
+		buffer[3] = nextY % 10 + '0';
 
 		DrawManager::GetInstance()->WriteData(buffer, 4);
 	}
