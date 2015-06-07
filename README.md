@@ -1,5 +1,4 @@
-# HCI
-Human Computer Interaction @ NHN NEXT 2015
+# Human Computer Interaction @ NHN NEXT 2015
 
 This is a final project for my HCI class at NHN NEXT. There was no restriction on selecting topic, except there must be an interaction between computer and human, and I chose tangible sketchbook using Arduino and Multi-touch screen. 
 
